@@ -739,6 +739,109 @@ export default function Dashboard() {
           text-transform: uppercase;
           letter-spacing: 0.05em;
         }
+
+        /* Watchlist Filter Buttons Segment Control */
+        .filter-row {
+          display: flex;
+          gap: 4px;
+          background: rgba(0, 0, 0, 0.03);
+          padding: 4px;
+          border-radius: 10px;
+          width: 100%;
+        }
+        .filter-btn {
+          flex: 1;
+          border: none;
+          background: transparent;
+          padding: 8px 10px;
+          font-size: 11.5px;
+          font-weight: 700;
+          color: var(--text-muted);
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all var(--transition-fast);
+          text-transform: uppercase;
+          text-align: center;
+        }
+        .filter-btn:hover {
+          color: var(--text-primary);
+        }
+        .filter-btn.active {
+          background: #ffffff;
+          color: var(--accent-primary);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .filter-btn.active:nth-child(2) { /* BUY */
+          background: var(--color-buy-bg);
+          color: var(--color-buy);
+          box-shadow: none;
+        }
+        .filter-btn.active:nth-child(3) { /* SELL */
+          background: var(--color-sell-bg);
+          color: var(--color-sell);
+          box-shadow: none;
+        }
+        .filter-btn.active:nth-child(4) { /* HOLD */
+          background: var(--color-hold-bg);
+          color: var(--color-hold);
+          box-shadow: none;
+        }
+
+        /* Stock Hero Grid Row Styles */
+        .stock-hero {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 24px;
+          border-radius: 16px;
+          min-height: 80px;
+        }
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+        .sector-tag {
+          font-size: 10.5px;
+          font-weight: 700;
+          color: var(--accent-primary);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+        .stock-name-title {
+          font-size: 18px;
+          font-weight: 800;
+          color: var(--text-primary);
+          font-family: var(--font-display);
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin: 0;
+        }
+        .symbol-sub {
+          font-size: 13px;
+          font-weight: 500;
+          color: var(--text-muted);
+        }
+        .hero-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 4px;
+        }
+        .hero-price {
+          font-size: 20px;
+          font-weight: 800;
+          color: var(--text-primary);
+          font-family: var(--font-display);
+        }
+        .hero-change {
+          font-size: 13px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
       `}</style>
 
       {/* Triggered Alerts Notification System */}
