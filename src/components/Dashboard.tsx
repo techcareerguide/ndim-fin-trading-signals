@@ -571,12 +571,18 @@ export default function Dashboard() {
         }
         .search-input {
           width: 100%;
-          background: rgba(0, 0, 0, 0.2);
-          border: 1px solid var(--glass-border);
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.08);
           padding: 10px 12px 10px 40px;
           border-radius: 10px;
           color: var(--text-primary);
           outline: none;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+          transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .search-input:focus {
+          border-color: var(--accent-primary);
+          box-shadow: 0 2px 12px rgba(79, 70, 229, 0.08);
         }
         .watchlist-scroll {
           flex: 1;
@@ -589,16 +595,24 @@ export default function Dashboard() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 12px;
-          border-radius: 10px;
-          background: rgba(255,255,255,0.01);
-          border: 1px solid transparent;
+          padding: 14px 16px;
+          border-radius: 12px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.04);
           cursor: pointer;
           transition: all var(--transition-fast);
+          box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+        }
+        .watchlist-item:hover {
+          background: rgba(255, 255, 255, 0.9);
+          border-color: rgba(99, 102, 241, 0.2);
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.02);
         }
         .watchlist-item.selected {
-          background: rgba(99, 102, 241, 0.08);
-          border-color: rgba(99, 102, 241, 0.25);
+          background: rgba(79, 70, 229, 0.06);
+          border-color: var(--accent-primary);
+          box-shadow: 0 4px 12px rgba(79, 70, 229, 0.04);
         }
         
         /* Portfolio simulator styling */
@@ -717,9 +731,47 @@ export default function Dashboard() {
           cursor: pointer;
           color: var(--text-muted);
           transition: color var(--transition-fast);
-        }
         .info-indicator-btn:hover {
           color: var(--accent-primary);
+        }
+
+        /* Screener Charts & Indicators Layout */
+        .chart-card {
+          padding: 24px;
+        }
+        .indicators-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          margin-top: 24px;
+        }
+        .indicator-panel {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          justify-content: space-between;
+          min-height: 110px;
+        }
+        .indicator-value-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-top: auto;
+        }
+        .indicator-value {
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--text-primary);
+          font-family: var(--font-display);
+        }
+        .indicator-badge {
+          padding: 4px 8px;
+          border-radius: 6px;
+          font-size: 11px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
         }
       `}</style>
 
