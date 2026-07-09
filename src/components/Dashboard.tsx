@@ -7,8 +7,8 @@ import {
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import type { StockData, PriceAlert, Holding, TradeLogEntry, BacktestConfig, BacktestResults, MarketOverviewData, HistoricalData } from '../types';
 import { 
-  updateStockData, runBacktest, 
-  generateInitialMarketOverview, updateMarketOverview 
+  runBacktest, 
+  generateInitialMarketOverview
 } from '../mockData';
 import stocksData from '../data/stocks.json';
 
@@ -202,8 +202,6 @@ export default function Dashboard() {
   // Active Educational Guidebook Popover
   const [activeGuide, setActiveGuide] = useState<string | null>(null);
 
-  // Flash states for price updates
-  const [priceFlash, setPriceFlash] = useState<Record<string, 'up' | 'down' | null>>({});
   const prevPricesRef = useRef<Record<string, number>>({});
 
   // Initialize stocks and market data
@@ -214,44 +212,11 @@ export default function Dashboard() {
     initialData.forEach(s => {
       prevPricesRef.current[s.symbol] = s.price;
     });
+    
+    // Check alerts and update holdings once on load
+    checkAlerts(initialData);
+    updateHoldingsPrices(initialData);
   }, []);
-
-  // Live simulation updates
-  useEffect(() => {
-    if (stocks.length === 0) return;
-
-    const interval = setInterval(() => {
-      // 1. Update Stocks Ticks
-      setStocks(prevStocks => {
-        const nextStocks = updateStockData(prevStocks);
-        const nextFlash: Record<string, 'up' | 'down' | null> = {};
-
-        nextStocks.forEach(s => {
-          const prevPrice = prevPricesRef.current[s.symbol] || s.price;
-          if (s.price > prevPrice) {
-            nextFlash[s.symbol] = 'up';
-          } else if (s.price < prevPrice) {
-            nextFlash[s.symbol] = 'down';
-          }
-          prevPricesRef.current[s.symbol] = s.price;
-        });
-
-        setPriceFlash(nextFlash);
-        checkAlerts(nextStocks);
-        updateHoldingsPrices(nextStocks);
-
-        return nextStocks;
-      });
-
-      // 2. Update Market Overview Stats
-      setMarketOverview(prevOverview => {
-        if (!prevOverview) return null;
-        return updateMarketOverview(prevOverview);
-      });
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [stocks.length, alerts, holdings]);
 
   // Keep holdings prices updated with live ticker changes
   const updateHoldingsPrices = (currentStocks: StockData[]) => {
@@ -801,9 +766,9 @@ export default function Dashboard() {
             <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Indian Markets Technical Screener & Mastery Tool</p>
           </div>
         </div>
-        <div className="live-badge">
-          <div className="pulse-dot" />
-          <span>Simulating Live Feeds</span>
+        <div className="live-badge" style={{ background: 'var(--color-buy-bg)', borderColor: 'var(--color-buy-border)', color: 'var(--color-buy)' }}>
+          <div className="pulse-dot" style={{ backgroundColor: 'var(--color-buy)' }} />
+          <span>Verified Yahoo Finance Feed</span>
         </div>
       </div>
 
@@ -875,8 +840,7 @@ export default function Dashboard() {
           <div className="watchlist-scroll">
             {filteredStocks.map(stock => {
               const changeDir = stock.change >= 0;
-              const flash = priceFlash[stock.symbol];
-              const flashClass = flash === 'up' ? 'flash-up' : flash === 'down' ? 'flash-down' : '';
+              const flashClass = '';
 
               return (
                 <div 
@@ -916,7 +880,7 @@ export default function Dashboard() {
                   </h2>
                 </div>
                 <div className="hero-right">
-                  <span className={`hero-price ${priceFlash[selectedStock.symbol] === 'up' ? 'flash-up' : priceFlash[selectedStock.symbol] === 'down' ? 'flash-down' : ''}`}>
+                  <span className="hero-price">
                     ₹{selectedStock.price.toFixed(2)}
                   </span>
                   <span className={`hero-change ${selectedStock.change >= 0 ? 'watchlist-change up' : 'watchlist-change down'}`}>
