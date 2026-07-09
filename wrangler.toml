@@ -1,0 +1,7 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "ndim-fin"
+compatibility_date = "2026-07-09"
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
