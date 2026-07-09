@@ -93,7 +93,7 @@ const stockTemplates = [
   { symbol: 'M&M', name: 'Mahindra & Mahindra Ltd.', sector: 'Automobile', basePrice: 2850 },
   { symbol: 'TATASTEEL', name: 'Tata Steel Ltd.', sector: 'Metals & Mining', basePrice: 175 },
   { symbol: 'SUNPHARMA', name: 'Sun Pharmaceutical Industries Ltd.', sector: 'Healthcare & Pharma', basePrice: 1510 },
-  { symbol: 'LTIM', name: 'LTIMindtree Ltd.', sector: 'Information Technology', basePrice: 5120 }
+  { symbol: 'WIPRO', name: 'Wipro Ltd.', sector: 'Information Technology', basePrice: 480 }
 ];
 
 // Generate mock historical data

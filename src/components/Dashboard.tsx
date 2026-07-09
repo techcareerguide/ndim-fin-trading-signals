@@ -7,9 +7,10 @@ import {
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import type { StockData, PriceAlert, Holding, TradeLogEntry, BacktestConfig, BacktestResults, MarketOverviewData, HistoricalData } from '../types';
 import { 
-  generateInitialStockData, updateStockData, runBacktest, 
+  updateStockData, runBacktest, 
   generateInitialMarketOverview, updateMarketOverview 
 } from '../mockData';
+import stocksData from '../data/stocks.json';
 
 interface GlossaryTerm {
   term: string;
@@ -207,7 +208,7 @@ export default function Dashboard() {
 
   // Initialize stocks and market data
   useEffect(() => {
-    const initialData = generateInitialStockData();
+    const initialData = stocksData as StockData[];
     setStocks(initialData);
     setMarketOverview(generateInitialMarketOverview());
     initialData.forEach(s => {
