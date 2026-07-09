@@ -24,6 +24,7 @@ export interface StockData {
   symbol: string;
   name: string;
   sector: string;
+  indexGroup?: string;
   price: number;
   change: number;
   changePercent: number;

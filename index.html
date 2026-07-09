@@ -23,9 +23,26 @@
     <meta property="twitter:title" content="NDIM-Fin | Indian Stocks Trading Signals & Technical Screener" />
     <meta property="twitter:description" content="Get real-time simulated trading signals for top Indian stocks. Track RSI, MACD, paper trade, and backtest strategies." />
     <meta property="twitter:image" content="https://ndim-fin-trading-signals.pages.dev/favicon.svg" />
+
+    <!-- PWA Configurations -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NDIM-Fin" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('PWA ServiceWorker registered! Scope: ', reg.scope))
+            .catch(err => console.error('PWA ServiceWorker registration failed: ', err));
+        });
+      }
+    </script>
   </body>
 </html>
