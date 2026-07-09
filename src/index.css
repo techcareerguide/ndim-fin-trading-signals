@@ -54,6 +54,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6, .card-title, .stat-num, .logo-text {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);

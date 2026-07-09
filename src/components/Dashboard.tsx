@@ -497,14 +497,30 @@ export default function Dashboard() {
           padding: 16px 24px;
           border-radius: 16px;
         }
+        .header-title-sec {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        .header-logo {
+          background: var(--accent-primary);
+          color: white;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 12px;
+          font-weight: 800;
+          font-size: 18px;
+          box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+        }
         .header h1 {
           font-family: var(--font-display);
           font-size: 24px;
-          font-weight: 700;
+          font-weight: 800;
           margin: 0;
-          background: linear-gradient(to right, #ffffff, #94a3b8);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: var(--text-primary);
         }
         
         /* Master Navigation Tab Row */
