@@ -6,7 +6,7 @@
     "price": 1323.2,
     "change": 7.2,
     "changePercent": 0.55,
-    "volume": 3953854,
+    "volume": 6157592,
     "high24h": 1328.6,
     "low24h": 1311.2,
     "signal": "BUY",
@@ -680,7 +680,7 @@
         "high": 1328.6,
         "low": 1311.2,
         "close": 1323.2,
-        "volume": 3953854,
+        "volume": 6157592,
         "ema20": 1310.89,
         "sma50": 1303.72
       }
@@ -690,25 +690,25 @@
     "symbol": "TCS",
     "name": "Tata Consultancy Services Ltd.",
     "sector": "Information Technology",
-    "price": 2288.8,
-    "change": -24.4,
-    "changePercent": -1.05,
-    "volume": 863462,
+    "price": 2284.9,
+    "change": -28.3,
+    "changePercent": -1.22,
+    "volume": 1212956,
     "high24h": 2307,
-    "low24h": 2282.1,
+    "low24h": 2281.1,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 2288.8,
-    "targetPrice": 2059.92,
-    "stopLoss": 2403.24,
+    "entryPrice": 2284.9,
+    "targetPrice": 2056.41,
+    "stopLoss": 2399.14,
     "indicators": {
-      "rsi": 46.69,
-      "macdLine": 31.87,
-      "signalLine": 52.21,
-      "histogram": -20.34,
-      "ema20": 2343,
-      "sma50": 2226.81
+      "rsi": 46.47,
+      "macdLine": 32.18,
+      "signalLine": 52.73,
+      "histogram": -20.55,
+      "ema20": 2341.96,
+      "sma50": 2225.58
     },
     "history": [
       {
@@ -1182,23 +1182,13 @@
         "sma50": 2221.1
       },
       {
-        "date": "2026-07-22",
-        "open": 2216,
-        "high": 2226.8,
-        "low": 2201,
-        "close": 2208.3,
-        "volume": 1599665,
-        "ema20": 2165.27,
-        "sma50": 2208.3
-      },
-      {
         "date": "2026-07-23",
         "open": 2204,
         "high": 2250,
         "low": 2193.6,
         "close": 2242.9,
         "volume": 2503539,
-        "ema20": 2172.67,
+        "ema20": 2168.57,
         "sma50": 2242.9
       },
       {
@@ -1208,8 +1198,8 @@
         "low": 2205.1,
         "close": 2254.3,
         "volume": 3211699,
-        "ema20": 2180.44,
-        "sma50": 2187.87
+        "ema20": 2176.73,
+        "sma50": 2254.3
       },
       {
         "date": "2026-07-27",
@@ -1218,8 +1208,8 @@
         "low": 2272.4,
         "close": 2295.6,
         "volume": 4007292,
-        "ema20": 2191.41,
-        "sma50": 2188.12
+        "ema20": 2188.05,
+        "sma50": 2189.62
       },
       {
         "date": "2026-07-28",
@@ -1228,8 +1218,8 @@
         "low": 2323,
         "close": 2398,
         "volume": 8248513,
-        "ema20": 2211.08,
-        "sma50": 2189.54
+        "ema20": 2208.05,
+        "sma50": 2191.91
       },
       {
         "date": "2026-07-29",
@@ -1238,8 +1228,8 @@
         "low": 2415.1,
         "close": 2446.6,
         "volume": 7169419,
-        "ema20": 2233.51,
-        "sma50": 2191.92
+        "ema20": 2230.77,
+        "sma50": 2194.3
       },
       {
         "date": "2026-07-30",
@@ -1248,8 +1238,8 @@
         "low": 2423,
         "close": 2431.8,
         "volume": 4901582,
-        "ema20": 2252.4,
-        "sma50": 2194.01
+        "ema20": 2249.91,
+        "sma50": 2196.39
       },
       {
         "date": "2026-07-31",
@@ -1258,8 +1248,8 @@
         "low": 2326.1,
         "close": 2365.6,
         "volume": 4343683,
-        "ema20": 2263.18,
-        "sma50": 2194.98
+        "ema20": 2260.93,
+        "sma50": 2197.16
       },
       {
         "date": "2026-08-03",
@@ -1268,8 +1258,8 @@
         "low": 2383,
         "close": 2473.7,
         "volume": 3036839,
-        "ema20": 2283.23,
-        "sma50": 2198.29
+        "ema20": 2281.19,
+        "sma50": 2200.29
       },
       {
         "date": "2026-08-04",
@@ -1278,8 +1268,8 @@
         "low": 2435.1,
         "close": 2460,
         "volume": 2792792,
-        "ema20": 2300.06,
-        "sma50": 2201.96
+        "ema20": 2298.22,
+        "sma50": 2203.32
       },
       {
         "date": "2026-08-05",
@@ -1288,8 +1278,8 @@
         "low": 2408,
         "close": 2413,
         "volume": 3014409,
-        "ema20": 2310.82,
-        "sma50": 2204.54
+        "ema20": 2309.15,
+        "sma50": 2206.06
       },
       {
         "date": "2026-08-06",
@@ -1298,8 +1288,8 @@
         "low": 2368.5,
         "close": 2373,
         "volume": 2729141,
-        "ema20": 2316.74,
-        "sma50": 2206.32
+        "ema20": 2315.24,
+        "sma50": 2207.83
       },
       {
         "date": "2026-08-07",
@@ -1308,8 +1298,8 @@
         "low": 2375,
         "close": 2452.7,
         "volume": 4547979,
-        "ema20": 2329.69,
-        "sma50": 2210.19
+        "ema20": 2328.33,
+        "sma50": 2211.2
       },
       {
         "date": "2026-08-10",
@@ -1318,8 +1308,8 @@
         "low": 2423.5,
         "close": 2425.7,
         "volume": 2322023,
-        "ema20": 2338.83,
-        "sma50": 2212.76
+        "ema20": 2337.6,
+        "sma50": 2214.54
       },
       {
         "date": "2026-08-11",
@@ -1328,8 +1318,8 @@
         "low": 2428,
         "close": 2445.7,
         "volume": 1514105,
-        "ema20": 2349.01,
-        "sma50": 2212.73
+        "ema20": 2347.9,
+        "sma50": 2217.51
       },
       {
         "date": "2026-08-12",
@@ -1338,8 +1328,8 @@
         "low": 2300.1,
         "close": 2349.7,
         "volume": 7022647,
-        "ema20": 2349.08,
-        "sma50": 2214.89
+        "ema20": 2348.07,
+        "sma50": 2215.56
       },
       {
         "date": "2026-08-13",
@@ -1348,8 +1338,8 @@
         "low": 2332.3,
         "close": 2375,
         "volume": 2123494,
-        "ema20": 2351.55,
-        "sma50": 2217.57
+        "ema20": 2350.63,
+        "sma50": 2218.23
       },
       {
         "date": "2026-08-14",
@@ -1358,8 +1348,8 @@
         "low": 2333.4,
         "close": 2361,
         "volume": 2232160,
-        "ema20": 2352.45,
-        "sma50": 2220.82
+        "ema20": 2351.62,
+        "sma50": 2220.63
       },
       {
         "date": "2026-08-17",
@@ -1368,18 +1358,18 @@
         "low": 2310.6,
         "close": 2313.2,
         "volume": 2237636,
-        "ema20": 2348.71,
-        "sma50": 2224.05
+        "ema20": 2347.96,
+        "sma50": 2222.91
       },
       {
         "date": "2026-08-18",
         "open": 2300,
         "high": 2307,
-        "low": 2282.1,
-        "close": 2288.8,
-        "volume": 863462,
-        "ema20": 2343,
-        "sma50": 2226.81
+        "low": 2281.1,
+        "close": 2284.9,
+        "volume": 1212956,
+        "ema20": 2341.96,
+        "sma50": 2225.58
       }
     ]
   },
@@ -1387,25 +1377,25 @@
     "symbol": "HDFCBANK",
     "name": "HDFC Bank Ltd.",
     "sector": "Financial Services",
-    "price": 725.4,
-    "change": -3.6,
-    "changePercent": -0.49,
-    "volume": 8085830,
+    "price": 724,
+    "change": -5,
+    "changePercent": -0.69,
+    "volume": 12369156,
     "high24h": 729,
     "low24h": 723.25,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 725.4,
-    "targetPrice": 652.86,
-    "stopLoss": 761.67,
+    "entryPrice": 724,
+    "targetPrice": 651.6,
+    "stopLoss": 760.2,
     "indicators": {
-      "rsi": 33.57,
-      "macdLine": -14.09,
-      "signalLine": -14.04,
-      "histogram": -0.05,
-      "ema20": 742.37,
-      "sma50": 772.19
+      "rsi": 33.06,
+      "macdLine": -14.64,
+      "signalLine": -14.33,
+      "histogram": -0.31,
+      "ema20": 742.88,
+      "sma50": 771.87
     },
     "history": [
       {
@@ -1879,23 +1869,13 @@
         "sma50": 761.45
       },
       {
-        "date": "2026-07-22",
-        "open": 760.25,
-        "high": 761.35,
-        "low": 750.35,
-        "close": 753.15,
-        "volume": 23385446,
-        "ema20": 794.4,
-        "sma50": 753.15
-      },
-      {
         "date": "2026-07-23",
         "open": 749.4,
         "high": 751,
         "low": 743.25,
         "close": 747.25,
         "volume": 32532090,
-        "ema20": 789.91,
+        "ema20": 793.84,
         "sma50": 747.25
       },
       {
@@ -1905,8 +1885,8 @@
         "low": 737.25,
         "close": 742.8,
         "volume": 23837859,
-        "ema20": 785.42,
-        "sma50": 779.22
+        "ema20": 788.97,
+        "sma50": 742.8
       },
       {
         "date": "2026-07-27",
@@ -1915,8 +1895,8 @@
         "low": 738.1,
         "close": 739.55,
         "volume": 29678752,
-        "ema20": 781.05,
-        "sma50": 778.63
+        "ema20": 784.27,
+        "sma50": 778.94
       },
       {
         "date": "2026-07-28",
@@ -1925,8 +1905,8 @@
         "low": 732,
         "close": 735.4,
         "volume": 33886037,
-        "ema20": 776.7,
-        "sma50": 778.09
+        "ema20": 779.61,
+        "sma50": 778.28
       },
       {
         "date": "2026-07-29",
@@ -1935,8 +1915,8 @@
         "low": 740.8,
         "close": 748.2,
         "volume": 20460659,
-        "ema20": 773.99,
-        "sma50": 777.87
+        "ema20": 776.62,
+        "sma50": 777.99
       },
       {
         "date": "2026-07-30",
@@ -1945,8 +1925,8 @@
         "low": 745.5,
         "close": 753.95,
         "volume": 35844392,
-        "ema20": 772.08,
-        "sma50": 777.76
+        "ema20": 774.46,
+        "sma50": 777.88
       },
       {
         "date": "2026-07-31",
@@ -1955,8 +1935,8 @@
         "low": 747.2,
         "close": 748.15,
         "volume": 25522483,
-        "ema20": 769.8,
-        "sma50": 777.39
+        "ema20": 771.96,
+        "sma50": 777.66
       },
       {
         "date": "2026-08-03",
@@ -1965,8 +1945,8 @@
         "low": 750.05,
         "close": 753,
         "volume": 14827841,
-        "ema20": 768.2,
-        "sma50": 776.71
+        "ema20": 770.15,
+        "sma50": 777.39
       },
       {
         "date": "2026-08-04",
@@ -1975,8 +1955,8 @@
         "low": 738,
         "close": 742,
         "volume": 31559802,
-        "ema20": 765.71,
-        "sma50": 775.97
+        "ema20": 767.47,
+        "sma50": 776.49
       },
       {
         "date": "2026-08-05",
@@ -1985,8 +1965,8 @@
         "low": 732.6,
         "close": 735,
         "volume": 60050538,
-        "ema20": 762.78,
-        "sma50": 775.5
+        "ema20": 764.38,
+        "sma50": 775.61
       },
       {
         "date": "2026-08-06",
@@ -1995,8 +1975,8 @@
         "low": 733.55,
         "close": 734.3,
         "volume": 44772122,
-        "ema20": 760.07,
-        "sma50": 775.01
+        "ema20": 761.51,
+        "sma50": 775.12
       },
       {
         "date": "2026-08-07",
@@ -2005,8 +1985,8 @@
         "low": 728.2,
         "close": 731,
         "volume": 19382042,
-        "ema20": 757.3,
-        "sma50": 774.74
+        "ema20": 758.61,
+        "sma50": 774.57
       },
       {
         "date": "2026-08-10",
@@ -2015,8 +1995,8 @@
         "low": 728.5,
         "close": 731,
         "volume": 23660590,
-        "ema20": 754.8,
-        "sma50": 774.51
+        "ema20": 755.98,
+        "sma50": 774.3
       },
       {
         "date": "2026-08-11",
@@ -2025,8 +2005,8 @@
         "low": 726.55,
         "close": 729,
         "volume": 29154365,
-        "ema20": 752.34,
-        "sma50": 774.12
+        "ema20": 753.41,
+        "sma50": 774.03
       },
       {
         "date": "2026-08-12",
@@ -2035,8 +2015,8 @@
         "low": 722,
         "close": 729,
         "volume": 26993177,
-        "ema20": 750.12,
-        "sma50": 773.63
+        "ema20": 751.08,
+        "sma50": 773.64
       },
       {
         "date": "2026-08-13",
@@ -2045,8 +2025,8 @@
         "low": 724.5,
         "close": 725,
         "volume": 22129893,
-        "ema20": 747.72,
-        "sma50": 773.05
+        "ema20": 748.6,
+        "sma50": 773.07
       },
       {
         "date": "2026-08-14",
@@ -2055,8 +2035,8 @@
         "low": 723.5,
         "close": 727,
         "volume": 20364131,
-        "ema20": 745.75,
-        "sma50": 772.65
+        "ema20": 746.54,
+        "sma50": 772.52
       },
       {
         "date": "2026-08-17",
@@ -2065,18 +2045,18 @@
         "low": 724.5,
         "close": 729,
         "volume": 14823722,
-        "ema20": 744.16,
-        "sma50": 772.45
+        "ema20": 744.87,
+        "sma50": 772.16
       },
       {
         "date": "2026-08-18",
         "open": 726.3,
         "high": 729,
         "low": 723.25,
-        "close": 725.4,
-        "volume": 8085830,
-        "ema20": 742.37,
-        "sma50": 772.19
+        "close": 724,
+        "volume": 12369156,
+        "ema20": 742.88,
+        "sma50": 771.87
       }
     ]
   },
@@ -2084,25 +2064,25 @@
     "symbol": "INFY",
     "name": "Infosys Ltd.",
     "sector": "Information Technology",
-    "price": 1115.2,
-    "change": -24.7,
-    "changePercent": -2.17,
-    "volume": 3868036,
+    "price": 1117,
+    "change": -22.9,
+    "changePercent": -2.01,
+    "volume": 5467130,
     "high24h": 1131.9,
-    "low24h": 1112.7,
+    "low24h": 1112.5,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1115.2,
-    "targetPrice": 1003.68,
-    "stopLoss": 1170.96,
+    "entryPrice": 1117,
+    "targetPrice": 1005.3,
+    "stopLoss": 1172.85,
     "indicators": {
-      "rsi": 46.4,
-      "macdLine": 17.26,
-      "signalLine": 20.46,
-      "histogram": -3.21,
-      "ema20": 1140.22,
-      "sma50": 1103.45
+      "rsi": 46.73,
+      "macdLine": 17.4,
+      "signalLine": 20.49,
+      "histogram": -3.09,
+      "ema20": 1140.39,
+      "sma50": 1103.48
     },
     "history": [
       {
@@ -2749,11 +2729,11 @@
         "date": "2026-08-18",
         "open": 1124.5,
         "high": 1131.9,
-        "low": 1112.7,
-        "close": 1115.2,
-        "volume": 3868036,
-        "ema20": 1140.22,
-        "sma50": 1103.45
+        "low": 1112.5,
+        "close": 1117,
+        "volume": 5467130,
+        "ema20": 1140.39,
+        "sma50": 1103.48
       }
     ]
   },
@@ -2761,25 +2741,25 @@
     "symbol": "ICICIBANK",
     "name": "ICICI Bank Ltd.",
     "sector": "Financial Services",
-    "price": 1407.9,
-    "change": -7.4,
-    "changePercent": -0.52,
-    "volume": 3422178,
+    "price": 1412.3,
+    "change": -3,
+    "changePercent": -0.21,
+    "volume": 5452867,
     "high24h": 1416.2,
-    "low24h": 1407,
+    "low24h": 1406.3,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1407.9,
-    "targetPrice": 1267.11,
-    "stopLoss": 1478.3,
+    "entryPrice": 1412.3,
+    "targetPrice": 1271.07,
+    "stopLoss": 1482.91,
     "indicators": {
-      "rsi": 45.87,
-      "macdLine": 3.94,
-      "signalLine": 11.29,
-      "histogram": -7.34,
-      "ema20": 1424.41,
-      "sma50": 1399.29
+      "rsi": 47.25,
+      "macdLine": 4.3,
+      "signalLine": 11.36,
+      "histogram": -7.06,
+      "ema20": 1424.83,
+      "sma50": 1399.38
     },
     "history": [
       {
@@ -3436,11 +3416,11 @@
         "date": "2026-08-18",
         "open": 1410,
         "high": 1416.2,
-        "low": 1407,
-        "close": 1407.9,
-        "volume": 3422178,
-        "ema20": 1424.41,
-        "sma50": 1399.29
+        "low": 1406.3,
+        "close": 1412.3,
+        "volume": 5452867,
+        "ema20": 1424.83,
+        "sma50": 1399.38
       }
     ]
   },
@@ -3448,25 +3428,25 @@
     "symbol": "SBIN",
     "name": "State Bank of India",
     "sector": "Financial Services",
-    "price": 1056.9,
-    "change": -4.3,
-    "changePercent": -0.41,
-    "volume": 2088974,
+    "price": 1053.4,
+    "change": -7.8,
+    "changePercent": -0.74,
+    "volume": 3130614,
     "high24h": 1067.7,
-    "low24h": 1055.2,
-    "signal": "HOLD",
-    "signalStrength": 50,
-    "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 1056.9,
-    "targetPrice": 1141.45,
-    "stopLoss": 1014.62,
+    "low24h": 1053.3,
+    "signal": "SELL",
+    "signalStrength": 72,
+    "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
+    "entryPrice": 1053.4,
+    "targetPrice": 948.06,
+    "stopLoss": 1106.07,
     "indicators": {
-      "rsi": 52.55,
-      "macdLine": 11.58,
-      "signalLine": 11.86,
-      "histogram": -0.28,
-      "ema20": 1055.67,
-      "sma50": 1038.21
+      "rsi": 51.34,
+      "macdLine": 11.3,
+      "signalLine": 11.8,
+      "histogram": -0.5,
+      "ema20": 1055.34,
+      "sma50": 1038.14
     },
     "history": [
       {
@@ -4123,11 +4103,11 @@
         "date": "2026-08-18",
         "open": 1059.6,
         "high": 1067.7,
-        "low": 1055.2,
-        "close": 1056.9,
-        "volume": 2088974,
-        "ema20": 1055.67,
-        "sma50": 1038.21
+        "low": 1053.3,
+        "close": 1053.4,
+        "volume": 3130614,
+        "ema20": 1055.34,
+        "sma50": 1038.14
       }
     ]
   },
@@ -4135,25 +4115,25 @@
     "symbol": "BHARTIARTL",
     "name": "Bharti Airtel Ltd.",
     "sector": "Telecommunications",
-    "price": 1946.8,
-    "change": -22.5,
-    "changePercent": -1.14,
-    "volume": 3349266,
+    "price": 1941.4,
+    "change": -27.9,
+    "changePercent": -1.42,
+    "volume": 4433891,
     "high24h": 1959.7,
     "low24h": 1923.2,
-    "signal": "HOLD",
-    "signalStrength": 50,
-    "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 1946.8,
-    "targetPrice": 2102.54,
-    "stopLoss": 1868.93,
+    "signal": "SELL",
+    "signalStrength": 72,
+    "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
+    "entryPrice": 1941.4,
+    "targetPrice": 1747.26,
+    "stopLoss": 2038.47,
     "indicators": {
-      "rsi": 51.45,
-      "macdLine": 13.6,
-      "signalLine": 15.12,
-      "histogram": -1.52,
-      "ema20": 1944.77,
-      "sma50": 1904.27
+      "rsi": 50.49,
+      "macdLine": 13.17,
+      "signalLine": 15.03,
+      "histogram": -1.87,
+      "ema20": 1944.25,
+      "sma50": 1904.16
     },
     "history": [
       {
@@ -4801,10 +4781,10 @@
         "open": 1956.7,
         "high": 1959.7,
         "low": 1923.2,
-        "close": 1946.8,
-        "volume": 3349266,
-        "ema20": 1944.77,
-        "sma50": 1904.27
+        "close": 1941.4,
+        "volume": 4433891,
+        "ema20": 1944.25,
+        "sma50": 1904.16
       }
     ]
   },
@@ -4812,25 +4792,25 @@
     "symbol": "LT",
     "name": "Larsen & Toubro Ltd.",
     "sector": "Construction & Engineering",
-    "price": 4079.6,
-    "change": -7.1,
-    "changePercent": -0.17,
-    "volume": 451378,
+    "price": 4071.2,
+    "change": -15.5,
+    "changePercent": -0.38,
+    "volume": 854602,
     "high24h": 4085,
     "low24h": 4050,
     "signal": "BUY",
     "signalStrength": 75,
     "signalReason": "Accumulate / BUY: Bullish EMA crossover. Price action shows solid upward momentum above key moving averages.",
-    "entryPrice": 4079.6,
-    "targetPrice": 4487.56,
-    "stopLoss": 3875.62,
+    "entryPrice": 4071.2,
+    "targetPrice": 4478.32,
+    "stopLoss": 3867.64,
     "indicators": {
-      "rsi": 60,
-      "macdLine": 35.01,
-      "signalLine": 20.73,
-      "histogram": 14.28,
-      "ema20": 4011.04,
-      "sma50": 4008.27
+      "rsi": 58.86,
+      "macdLine": 34.34,
+      "signalLine": 20.6,
+      "histogram": 13.74,
+      "ema20": 4010.24,
+      "sma50": 4008.11
     },
     "history": [
       {
@@ -5488,10 +5468,10 @@
         "open": 4068,
         "high": 4085,
         "low": 4050,
-        "close": 4079.6,
-        "volume": 451378,
-        "ema20": 4011.04,
-        "sma50": 4008.27
+        "close": 4071.2,
+        "volume": 854602,
+        "ema20": 4010.24,
+        "sma50": 4008.11
       }
     ]
   },
@@ -5499,25 +5479,25 @@
     "symbol": "ITC",
     "name": "ITC Ltd.",
     "sector": "Fast Moving Consumer Goods",
-    "price": 271.4,
-    "change": -1.65,
-    "changePercent": -0.6,
-    "volume": 5024213,
+    "price": 269.9,
+    "change": -3.15,
+    "changePercent": -1.15,
+    "volume": 8950390,
     "high24h": 273.65,
-    "low24h": 271.35,
+    "low24h": 269.8,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 271.4,
-    "targetPrice": 244.26,
-    "stopLoss": 284.97,
+    "entryPrice": 269.9,
+    "targetPrice": 242.91,
+    "stopLoss": 283.39,
     "indicators": {
-      "rsi": 32.25,
-      "macdLine": -2.7,
-      "signalLine": -1.49,
-      "histogram": -1.2,
-      "ema20": 280.61,
-      "sma50": 284.48
+      "rsi": 30.89,
+      "macdLine": -2.88,
+      "signalLine": -1.6,
+      "histogram": -1.28,
+      "ema20": 280.51,
+      "sma50": 284.43
     },
     "history": [
       {
@@ -5991,23 +5971,13 @@
         "sma50": 281
       },
       {
-        "date": "2026-07-22",
-        "open": 280.5,
-        "high": 282.2,
-        "low": 278.5,
-        "close": 280.8,
-        "volume": 12995017,
-        "ema20": 283.33,
-        "sma50": 280.8
-      },
-      {
         "date": "2026-07-23",
         "open": 279.95,
         "high": 284,
         "low": 279.65,
         "close": 281.3,
         "volume": 21143589,
-        "ema20": 283.14,
+        "ema20": 283.38,
         "sma50": 281.3
       },
       {
@@ -6017,8 +5987,8 @@
         "low": 279.55,
         "close": 283.45,
         "volume": 24954082,
-        "ema20": 283.17,
-        "sma50": 288.03
+        "ema20": 283.39,
+        "sma50": 283.45
       },
       {
         "date": "2026-07-27",
@@ -6027,8 +5997,8 @@
         "low": 285.5,
         "close": 285.85,
         "volume": 19312804,
-        "ema20": 283.43,
-        "sma50": 287.55
+        "ema20": 283.62,
+        "sma50": 288.13
       },
       {
         "date": "2026-07-28",
@@ -6037,8 +6007,8 @@
         "low": 282.3,
         "close": 284.65,
         "volume": 14843878,
-        "ema20": 283.54,
-        "sma50": 287.03
+        "ema20": 283.72,
+        "sma50": 287.62
       },
       {
         "date": "2026-07-29",
@@ -6047,8 +6017,8 @@
         "low": 284.15,
         "close": 286.25,
         "volume": 19030590,
-        "ema20": 283.8,
-        "sma50": 286.61
+        "ema20": 283.96,
+        "sma50": 287.14
       },
       {
         "date": "2026-07-30",
@@ -6057,8 +6027,8 @@
         "low": 283.75,
         "close": 285.05,
         "volume": 18283697,
-        "ema20": 283.92,
-        "sma50": 286.15
+        "ema20": 284.07,
+        "sma50": 286.69
       },
       {
         "date": "2026-07-31",
@@ -6067,8 +6037,8 @@
         "low": 280.05,
         "close": 281,
         "volume": 16833813,
-        "ema20": 283.64,
-        "sma50": 285.73
+        "ema20": 283.77,
+        "sma50": 286.15
       },
       {
         "date": "2026-08-03",
@@ -6077,8 +6047,8 @@
         "low": 283,
         "close": 287,
         "volume": 45392755,
-        "ema20": 283.96,
-        "sma50": 285.39
+        "ema20": 284.08,
+        "sma50": 285.86
       },
       {
         "date": "2026-08-04",
@@ -6087,8 +6057,8 @@
         "low": 284.7,
         "close": 289,
         "volume": 12689243,
-        "ema20": 284.44,
-        "sma50": 285.14
+        "ema20": 284.55,
+        "sma50": 285.56
       },
       {
         "date": "2026-08-05",
@@ -6097,8 +6067,8 @@
         "low": 285,
         "close": 286.95,
         "volume": 11771241,
-        "ema20": 284.68,
-        "sma50": 285.04
+        "ema20": 284.78,
+        "sma50": 285.26
       },
       {
         "date": "2026-08-06",
@@ -6107,8 +6077,8 @@
         "low": 283.7,
         "close": 285.9,
         "volume": 12447629,
-        "ema20": 284.8,
-        "sma50": 284.92
+        "ema20": 284.88,
+        "sma50": 285.14
       },
       {
         "date": "2026-08-07",
@@ -6117,8 +6087,8 @@
         "low": 284.4,
         "close": 286.1,
         "volume": 6128841,
-        "ema20": 284.92,
-        "sma50": 284.9
+        "ema20": 285,
+        "sma50": 285.03
       },
       {
         "date": "2026-08-10",
@@ -6127,8 +6097,8 @@
         "low": 281.4,
         "close": 282.65,
         "volume": 9347929,
-        "ema20": 284.7,
-        "sma50": 284.96
+        "ema20": 284.78,
+        "sma50": 284.94
       },
       {
         "date": "2026-08-11",
@@ -6137,8 +6107,8 @@
         "low": 278,
         "close": 279,
         "volume": 13053722,
-        "ema20": 284.16,
-        "sma50": 284.88
+        "ema20": 284.23,
+        "sma50": 284.93
       },
       {
         "date": "2026-08-12",
@@ -6147,8 +6117,8 @@
         "low": 275.4,
         "close": 276.15,
         "volume": 12630816,
-        "ema20": 283.4,
-        "sma50": 284.86
+        "ema20": 283.46,
+        "sma50": 284.79
       },
       {
         "date": "2026-08-13",
@@ -6157,8 +6127,8 @@
         "low": 276.05,
         "close": 278.5,
         "volume": 11335590,
-        "ema20": 282.93,
-        "sma50": 284.83
+        "ema20": 282.99,
+        "sma50": 284.82
       },
       {
         "date": "2026-08-14",
@@ -6167,8 +6137,8 @@
         "low": 275.95,
         "close": 278.2,
         "volume": 7338537,
-        "ema20": 282.48,
-        "sma50": 284.78
+        "ema20": 282.53,
+        "sma50": 284.77
       },
       {
         "date": "2026-08-17",
@@ -6177,18 +6147,18 @@
         "low": 273,
         "close": 273.05,
         "volume": 12795275,
-        "ema20": 281.58,
-        "sma50": 284.65
+        "ema20": 281.63,
+        "sma50": 284.62
       },
       {
         "date": "2026-08-18",
         "open": 273.05,
         "high": 273.65,
-        "low": 271.35,
-        "close": 271.4,
-        "volume": 5024213,
-        "ema20": 280.61,
-        "sma50": 284.48
+        "low": 269.8,
+        "close": 269.9,
+        "volume": 8950390,
+        "ema20": 280.51,
+        "sma50": 284.43
       }
     ]
   },
@@ -6196,25 +6166,25 @@
     "symbol": "HINDUNILVR",
     "name": "Hindustan Unilever Ltd.",
     "sector": "Fast Moving Consumer Goods",
-    "price": 2036.2,
-    "change": -18.8,
-    "changePercent": -0.91,
-    "volume": 362551,
+    "price": 2040,
+    "change": -15,
+    "changePercent": -0.73,
+    "volume": 790925,
     "high24h": 2060,
-    "low24h": 2035.2,
+    "low24h": 2035,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 2036.2,
-    "targetPrice": 1832.58,
-    "stopLoss": 2138.01,
+    "entryPrice": 2040,
+    "targetPrice": 1836,
+    "stopLoss": 2142,
     "indicators": {
-      "rsi": 38.99,
-      "macdLine": -23.43,
-      "signalLine": -20.12,
-      "histogram": -3.3,
-      "ema20": 2091.7,
-      "sma50": 2135.67
+      "rsi": 39.45,
+      "macdLine": -23.12,
+      "signalLine": -20.06,
+      "histogram": -3.06,
+      "ema20": 2092.06,
+      "sma50": 2135.75
     },
     "history": [
       {
@@ -6861,11 +6831,11 @@
         "date": "2026-08-18",
         "open": 2055,
         "high": 2060,
-        "low": 2035.2,
-        "close": 2036.2,
-        "volume": 362551,
-        "ema20": 2091.7,
-        "sma50": 2135.67
+        "low": 2035,
+        "close": 2040,
+        "volume": 790925,
+        "ema20": 2092.06,
+        "sma50": 2135.75
       }
     ]
   },
@@ -6873,25 +6843,25 @@
     "symbol": "MARUTI",
     "name": "Maruti Suzuki India Ltd.",
     "sector": "Automobile",
-    "price": 13770,
-    "change": 10,
-    "changePercent": 0.07,
-    "volume": 82006,
+    "price": 13773,
+    "change": 13,
+    "changePercent": 0.09,
+    "volume": 170395,
     "high24h": 13890,
-    "low24h": 13761,
+    "low24h": 13760,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 13770,
-    "targetPrice": 12393,
-    "stopLoss": 14458.5,
+    "entryPrice": 13773,
+    "targetPrice": 12395.7,
+    "stopLoss": 14461.65,
     "indicators": {
-      "rsi": 46.58,
-      "macdLine": 27.2,
-      "signalLine": 68.82,
-      "histogram": -41.62,
-      "ema20": 13890.53,
-      "sma50": 13754.32
+      "rsi": 46.69,
+      "macdLine": 27.44,
+      "signalLine": 68.87,
+      "histogram": -41.43,
+      "ema20": 13890.81,
+      "sma50": 13754.38
     },
     "history": [
       {
@@ -7528,11 +7498,11 @@
         "date": "2026-08-18",
         "open": 13762,
         "high": 13890,
-        "low": 13761,
-        "close": 13770,
-        "volume": 82006,
-        "ema20": 13890.53,
-        "sma50": 13754.32
+        "low": 13760,
+        "close": 13773,
+        "volume": 170395,
+        "ema20": 13890.81,
+        "sma50": 13754.38
       }
     ]
   },
@@ -7540,25 +7510,25 @@
     "symbol": "M&M",
     "name": "Mahindra & Mahindra Ltd.",
     "sector": "Automobile",
-    "price": 3429.1,
-    "change": 38.7,
-    "changePercent": 1.14,
-    "volume": 631578,
-    "high24h": 3429.8,
+    "price": 3428.8,
+    "change": 38.4,
+    "changePercent": 1.13,
+    "volume": 908427,
+    "high24h": 3430.6,
     "low24h": 3390.2,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 3429.1,
-    "targetPrice": 3703.43,
-    "stopLoss": 3291.94,
+    "entryPrice": 3428.8,
+    "targetPrice": 3703.1,
+    "stopLoss": 3291.65,
     "indicators": {
-      "rsi": 58.85,
-      "macdLine": 69.15,
+      "rsi": 58.83,
+      "macdLine": 69.13,
       "signalLine": 75.62,
-      "histogram": -6.47,
-      "ema20": 3365.98,
-      "sma50": 3214.48
+      "histogram": -6.49,
+      "ema20": 3365.95,
+      "sma50": 3214.47
     },
     "history": [
       {
@@ -8224,12 +8194,12 @@
       {
         "date": "2026-08-18",
         "open": 3390.4,
-        "high": 3429.8,
+        "high": 3430.6,
         "low": 3390.2,
-        "close": 3429.1,
-        "volume": 631578,
-        "ema20": 3365.98,
-        "sma50": 3214.48
+        "close": 3428.8,
+        "volume": 908427,
+        "ema20": 3365.95,
+        "sma50": 3214.47
       }
     ]
   },
@@ -8237,24 +8207,24 @@
     "symbol": "TATASTEEL",
     "name": "Tata Steel Ltd.",
     "sector": "Metals & Mining",
-    "price": 184.81,
-    "change": -1.19,
-    "changePercent": -0.64,
-    "volume": 6773499,
+    "price": 184.58,
+    "change": -1.42,
+    "changePercent": -0.76,
+    "volume": 9122719,
     "high24h": 187.11,
     "low24h": 184.33,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 184.81,
-    "targetPrice": 166.33,
-    "stopLoss": 194.05,
+    "entryPrice": 184.58,
+    "targetPrice": 166.12,
+    "stopLoss": 193.81,
     "indicators": {
-      "rsi": 42.41,
-      "macdLine": -1.12,
+      "rsi": 42.03,
+      "macdLine": -1.14,
       "signalLine": -1.06,
-      "histogram": -0.06,
-      "ema20": 187.64,
+      "histogram": -0.08,
+      "ema20": 187.62,
       "sma50": 190.33
     },
     "history": [
@@ -8903,9 +8873,9 @@
         "open": 186.34,
         "high": 187.11,
         "low": 184.33,
-        "close": 184.81,
-        "volume": 6773499,
-        "ema20": 187.64,
+        "close": 184.58,
+        "volume": 9122719,
+        "ema20": 187.62,
         "sma50": 190.33
       }
     ]
@@ -8914,25 +8884,25 @@
     "symbol": "SUNPHARMA",
     "name": "Sun Pharmaceutical Industries Ltd.",
     "sector": "Healthcare & Pharma",
-    "price": 1881,
-    "change": -1,
-    "changePercent": -0.05,
-    "volume": 648023,
+    "price": 1880,
+    "change": -2,
+    "changePercent": -0.11,
+    "volume": 1324413,
     "high24h": 1899,
-    "low24h": 1879.5,
+    "low24h": 1868.3,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1881,
-    "targetPrice": 1692.9,
-    "stopLoss": 1975.05,
+    "entryPrice": 1880,
+    "targetPrice": 1692,
+    "stopLoss": 1974,
     "indicators": {
-      "rsi": 34.47,
-      "macdLine": -3.3,
-      "signalLine": 8.9,
-      "histogram": -12.19,
-      "ema20": 1932.58,
-      "sma50": 1903.91
+      "rsi": 34.27,
+      "macdLine": -3.38,
+      "signalLine": 8.88,
+      "histogram": -12.26,
+      "ema20": 1932.49,
+      "sma50": 1903.89
     },
     "history": [
       {
@@ -9589,11 +9559,11 @@
         "date": "2026-08-18",
         "open": 1890,
         "high": 1899,
-        "low": 1879.5,
-        "close": 1881,
-        "volume": 648023,
-        "ema20": 1932.58,
-        "sma50": 1903.91
+        "low": 1868.3,
+        "close": 1880,
+        "volume": 1324413,
+        "ema20": 1932.49,
+        "sma50": 1903.89
       }
     ]
   },
@@ -9601,25 +9571,25 @@
     "symbol": "WIPRO",
     "name": "Wipro Ltd.",
     "sector": "Information Technology",
-    "price": 179.64,
-    "change": -2.26,
-    "changePercent": -1.24,
-    "volume": 3915944,
+    "price": 179.01,
+    "change": -2.89,
+    "changePercent": -1.59,
+    "volume": 4712882,
     "high24h": 181.99,
     "low24h": 178.91,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 179.64,
-    "targetPrice": 161.68,
-    "stopLoss": 188.62,
+    "entryPrice": 179.01,
+    "targetPrice": 161.11,
+    "stopLoss": 187.96,
     "indicators": {
-      "rsi": 44.68,
-      "macdLine": 0.86,
-      "signalLine": 1.39,
-      "histogram": -0.53,
-      "ema20": 182.55,
-      "sma50": 179.11
+      "rsi": 43.52,
+      "macdLine": 0.76,
+      "signalLine": 1.31,
+      "histogram": -0.56,
+      "ema20": 182.52,
+      "sma50": 179.24
     },
     "history": [
       {
@@ -10093,23 +10063,13 @@
         "sma50": 174.97
       },
       {
-        "date": "2026-07-22",
-        "open": 174.77,
-        "high": 174.96,
-        "low": 173.42,
-        "close": 174.44,
-        "volume": 5057035,
-        "ema20": 176.53,
-        "sma50": 174.44
-      },
-      {
         "date": "2026-07-23",
         "open": 173.81,
         "high": 175.56,
         "low": 173.31,
         "close": 174.82,
         "volume": 9055905,
-        "ema20": 176.36,
+        "ema20": 176.56,
         "sma50": 174.82
       },
       {
@@ -10119,8 +10079,8 @@
         "low": 172.8,
         "close": 177.12,
         "volume": 13282944,
-        "ema20": 176.44,
-        "sma50": 184.31
+        "ema20": 176.62,
+        "sma50": 177.12
       },
       {
         "date": "2026-07-27",
@@ -10129,8 +10089,8 @@
         "low": 175.61,
         "close": 178.53,
         "volume": 12504426,
-        "ema20": 176.64,
-        "sma50": 184.04
+        "ema20": 176.8,
+        "sma50": 184.39
       },
       {
         "date": "2026-07-28",
@@ -10139,8 +10099,8 @@
         "low": 178.55,
         "close": 181.12,
         "volume": 26873060,
-        "ema20": 177.06,
-        "sma50": 183.76
+        "ema20": 177.21,
+        "sma50": 184.17
       },
       {
         "date": "2026-07-29",
@@ -10149,8 +10109,8 @@
         "low": 181.45,
         "close": 183.61,
         "volume": 26147867,
-        "ema20": 177.69,
-        "sma50": 183.49
+        "ema20": 177.82,
+        "sma50": 183.94
       },
       {
         "date": "2026-07-30",
@@ -10159,8 +10119,8 @@
         "low": 183.4,
         "close": 186.33,
         "volume": 54015268,
-        "ema20": 178.51,
-        "sma50": 183.22
+        "ema20": 178.63,
+        "sma50": 183.72
       },
       {
         "date": "2026-07-31",
@@ -10169,8 +10129,8 @@
         "low": 180.83,
         "close": 183.65,
         "volume": 18762810,
-        "ema20": 179,
-        "sma50": 182.83
+        "ema20": 179.11,
+        "sma50": 183.4
       },
       {
         "date": "2026-08-03",
@@ -10179,8 +10139,8 @@
         "low": 184.02,
         "close": 188.66,
         "volume": 15840516,
-        "ema20": 179.92,
-        "sma50": 182.47
+        "ema20": 180.02,
+        "sma50": 183.11
       },
       {
         "date": "2026-08-04",
@@ -10189,8 +10149,8 @@
         "low": 186.3,
         "close": 186.3,
         "volume": 11903457,
-        "ema20": 180.53,
-        "sma50": 182.12
+        "ema20": 180.62,
+        "sma50": 182.7
       },
       {
         "date": "2026-08-05",
@@ -10199,8 +10159,8 @@
         "low": 186.07,
         "close": 186.99,
         "volume": 8829250,
-        "ema20": 181.14,
-        "sma50": 181.83
+        "ema20": 181.22,
+        "sma50": 182.37
       },
       {
         "date": "2026-08-06",
@@ -10209,8 +10169,8 @@
         "low": 185.41,
         "close": 186.12,
         "volume": 6629768,
-        "ema20": 181.62,
-        "sma50": 181.52
+        "ema20": 181.69,
+        "sma50": 182.06
       },
       {
         "date": "2026-08-07",
@@ -10219,8 +10179,8 @@
         "low": 185.65,
         "close": 187.53,
         "volume": 7823102,
-        "ema20": 182.18,
-        "sma50": 181.18
+        "ema20": 182.25,
+        "sma50": 181.78
       },
       {
         "date": "2026-08-10",
@@ -10229,8 +10189,8 @@
         "low": 185,
         "close": 185.5,
         "volume": 5337618,
-        "ema20": 182.5,
-        "sma50": 180.76
+        "ema20": 182.56,
+        "sma50": 181.4
       },
       {
         "date": "2026-08-11",
@@ -10239,8 +10199,8 @@
         "low": 183.31,
         "close": 184.6,
         "volume": 9182421,
-        "ema20": 182.7,
-        "sma50": 180.26
+        "ema20": 182.75,
+        "sma50": 180.97
       },
       {
         "date": "2026-08-12",
@@ -10249,8 +10209,8 @@
         "low": 181.91,
         "close": 183.94,
         "volume": 8624548,
-        "ema20": 182.81,
-        "sma50": 179.86
+        "ema20": 182.86,
+        "sma50": 180.45
       },
       {
         "date": "2026-08-13",
@@ -10259,8 +10219,8 @@
         "low": 181.72,
         "close": 183.1,
         "volume": 5434084,
-        "ema20": 182.84,
-        "sma50": 179.43
+        "ema20": 182.89,
+        "sma50": 180.03
       },
       {
         "date": "2026-08-14",
@@ -10269,8 +10229,8 @@
         "low": 183.1,
         "close": 184,
         "volume": 7366162,
-        "ema20": 182.95,
-        "sma50": 179.14
+        "ema20": 182.99,
+        "sma50": 179.62
       },
       {
         "date": "2026-08-17",
@@ -10279,18 +10239,18 @@
         "low": 181,
         "close": 181.9,
         "volume": 4436515,
-        "ema20": 182.85,
-        "sma50": 179.15
+        "ema20": 182.89,
+        "sma50": 179.29
       },
       {
         "date": "2026-08-18",
         "open": 181.9,
         "high": 181.99,
         "low": 178.91,
-        "close": 179.64,
-        "volume": 3915944,
-        "ema20": 182.55,
-        "sma50": 179.11
+        "close": 179.01,
+        "volume": 4712882,
+        "ema20": 182.52,
+        "sma50": 179.24
       }
     ]
   }
