@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Search, Bell, AlertTriangle, Layers, Sliders, 
   Activity, Plus, Trash2, X, Briefcase, History,
-  Globe, Info, BookOpen
+  Globe, Info, BookOpen, HelpCircle
 } from 'lucide-react';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import type { StockData, PriceAlert, Holding, TradeLogEntry, BacktestConfig, BacktestResults, MarketOverviewData, HistoricalData } from '../types';
@@ -11,6 +11,7 @@ import {
   generateInitialMarketOverview
 } from '../mockData';
 import stocksData from '../data/stocks.json';
+import { detectPattern } from '../utils/patterns';
 
 interface GlossaryTerm {
   term: string;
@@ -160,8 +161,8 @@ export default function Dashboard() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [signalFilter, setSignalFilter] = useState<string>('ALL');
   
-  // Navigation Tabs: 'SCREENER' | 'PORTFOLIO' | 'BACKTESTER' | 'MARKET' | 'GLOSSARY'
-  const [activeTab, setActiveTab] = useState<'SCREENER' | 'PORTFOLIO' | 'BACKTESTER' | 'MARKET' | 'GLOSSARY'>('SCREENER');
+  // Navigation Tabs: 'SCREENER' | 'PORTFOLIO' | 'BACKTESTER' | 'MARKET' | 'GLOSSARY' | 'QUIZ'
+  const [activeTab, setActiveTab] = useState<'SCREENER' | 'PORTFOLIO' | 'BACKTESTER' | 'MARKET' | 'GLOSSARY' | 'QUIZ'>('SCREENER');
   const [showSignalExplain, setShowSignalExplain] = useState<boolean>(false);
 
   // Glossary Pagination & Search States
@@ -173,6 +174,9 @@ export default function Dashboard() {
   const [showEma20, setShowEma20] = useState<boolean>(true);
   const [showSma50, setShowSma50] = useState<boolean>(true);
   const [hoveredData, setHoveredData] = useState<HistoricalData | null>(null);
+
+  // Selected Index Group Filter
+  const [selectedIndexGroup, setSelectedIndexGroup] = useState<string>('ALL');
 
   // Alerts System
   const [alerts, setAlerts] = useState<PriceAlert[]>([]);
@@ -192,9 +196,26 @@ export default function Dashboard() {
     rsiOversold: 30,
     rsiOverbought: 70,
     emaFast: 20,
-    smaSlow: 50
+    smaSlow: 50,
+    useRsi: true,
+    useMacd: false,
+    useMaCrossover: false
   });
   const [backtestResults, setBacktestResults] = useState<BacktestResults | null>(null);
+
+  // Equity Curve Tracking State
+  const [equityHistory, setEquityHistory] = useState<{ date: string; balance: number }[]>(() => {
+    const saved = localStorage.getItem('ndim_equity_curve');
+    return saved ? JSON.parse(saved) : [{ date: 'Start', balance: 1000000 }];
+  });
+
+  // Educational Quiz States
+  const [quizStock, setQuizStock] = useState<StockData | null>(null);
+  const [quizVisibleHistory, setQuizVisibleHistory] = useState<HistoricalData[]>([]);
+  const [quizFullHistory, setQuizFullHistory] = useState<HistoricalData[]>([]);
+  const [quizAnswered, setQuizAnswered] = useState<boolean>(false);
+  const [quizActualResult, setQuizActualResult] = useState<string>('');
+  const [quizScore, setQuizScore] = useState<number>(0);
 
   // Market Breadth / FII DII States
   const [marketOverview, setMarketOverview] = useState<MarketOverviewData | null>(null);
@@ -203,6 +224,50 @@ export default function Dashboard() {
   const [activeGuide, setActiveGuide] = useState<string | null>(null);
 
   const prevPricesRef = useRef<Record<string, number>>({});
+
+  // Start a new Technical Analysis quiz question
+  const startNewQuiz = (currentStocks: StockData[] = stocks) => {
+    const list = currentStocks.length > 0 ? currentStocks : (stocksData as StockData[]);
+    if (list.length === 0) return;
+    const randomStock = list[Math.floor(Math.random() * list.length)];
+    const history = randomStock.history;
+    if (history.length < 35) return;
+
+    // Pick a historical cutoff point
+    const cutoff = Math.floor(Math.random() * (history.length - 20)) + 10;
+    const visible = history.slice(0, cutoff);
+    
+    setQuizStock(randomStock);
+    setQuizVisibleHistory(visible);
+    setQuizFullHistory(history.slice(0, cutoff + 10));
+    setQuizAnswered(false);
+    setQuizActualResult('');
+  };
+
+  // Process user prediction in the Quiz game
+  const handleQuizAnswer = (userChoice: 'BUY' | 'SELL' | 'HOLD') => {
+    if (!quizStock || quizAnswered) return;
+    setQuizAnswered(true);
+
+    const startPrice = quizVisibleHistory[quizVisibleHistory.length - 1].close;
+    const endPrice = quizFullHistory[quizFullHistory.length - 1].close;
+    const changePct = ((endPrice - startPrice) / startPrice) * 100;
+
+    let correctChoice: 'BUY' | 'SELL' | 'HOLD' = 'HOLD';
+    if (changePct > 1.5) correctChoice = 'BUY';
+    else if (changePct < -1.5) correctChoice = 'SELL';
+
+    const isCorrect = userChoice === correctChoice;
+    if (isCorrect) {
+      setQuizScore(prev => prev + 10);
+    }
+    
+    setQuizActualResult(
+      isCorrect 
+        ? `Correct! Price went from ₹${startPrice.toFixed(1)} to ₹${endPrice.toFixed(1)} (${changePct >= 0 ? '+' : ''}${changePct.toFixed(1)}% over next 10 days).`
+        : `Incorrect. You chose ${userChoice}, but the correct position was ${correctChoice}. Price went from ₹${startPrice.toFixed(1)} to ₹${endPrice.toFixed(1)} (${changePct >= 0 ? '+' : ''}${changePct.toFixed(1)}% over next 10 days).`
+    );
+  };
 
   // Initialize stocks and market data
   useEffect(() => {
@@ -216,6 +281,13 @@ export default function Dashboard() {
     // Check alerts and update holdings once on load
     checkAlerts(initialData);
     updateHoldingsPrices(initialData);
+
+    // Request Notification permission for PWA local alerts
+    if ('Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission();
+    }
+
+    startNewQuiz(initialData);
   }, []);
 
   // Keep holdings prices updated with live ticker changes
@@ -256,6 +328,14 @@ export default function Dashboard() {
 
       if (triggered) {
         const msg = `${alert.symbol} has crossed ${alert.condition.toLowerCase()} ₹${alert.targetPrice} (Current: ₹${stock.price})`;
+        
+        if ('Notification' in window && Notification.permission === 'granted') {
+          new Notification('NDIM-Fin Price Trigger 🚨', {
+            body: msg,
+            icon: '/favicon.svg'
+          });
+        }
+        
         setTriggeredAlerts(prev => [...prev, { id: alert.id, msg }]);
         setAlerts(prev => prev.map(a => a.id === alert.id ? { ...a, active: false } : a));
       }
@@ -263,6 +343,18 @@ export default function Dashboard() {
   };
 
   const selectedStock = stocks.find(s => s.symbol === selectedSymbol) || stocks[0];
+
+  // Record total capital (cash + holdings value) for the Equity curve chart
+  const recordEquityPoint = (newBalance: number, nextHoldings: Holding[]) => {
+    const holdingsVal = nextHoldings.reduce((sum, h) => sum + h.currentValue, 0);
+    const totalVal = newBalance + holdingsVal;
+    const timeString = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    setEquityHistory(prev => {
+      const nextHistory = [...prev, { date: timeString, balance: parseFloat(totalVal.toFixed(2)) }];
+      localStorage.setItem('ndim_equity_curve', JSON.stringify(nextHistory));
+      return nextHistory;
+    });
+  };
 
   // Paper Trading buy/sell execution
   const executeVirtualTrade = (type: 'BUY' | 'SELL') => {
@@ -282,11 +374,12 @@ export default function Dashboard() {
       
       setHoldings(prev => {
         const existing = prev.find(h => h.symbol === selectedStock.symbol);
+        let nextList = [];
         if (existing) {
           const newQty = existing.quantity + qty;
           const newTotalCost = existing.totalCost + totalAmount;
           const avgBuyPrice = newTotalCost / newQty;
-          return prev.map(h => h.symbol === selectedStock.symbol ? {
+          nextList = prev.map(h => h.symbol === selectedStock.symbol ? {
             ...h,
             quantity: newQty,
             totalCost: newTotalCost,
@@ -296,7 +389,7 @@ export default function Dashboard() {
             pnlPercent: (((newQty * price) - newTotalCost) / newTotalCost) * 100
           } : h);
         } else {
-          return [...prev, {
+          nextList = [...prev, {
             symbol: selectedStock.symbol,
             quantity: qty,
             avgBuyPrice: price,
@@ -307,6 +400,8 @@ export default function Dashboard() {
             pnlPercent: 0
           }];
         }
+        recordEquityPoint(balance - totalAmount, nextList);
+        return nextList;
       });
     } else {
       const existing = holdings.find(h => h.symbol === selectedStock.symbol);
@@ -317,11 +412,10 @@ export default function Dashboard() {
 
       const originalCostOfSoldShares = existing.avgBuyPrice * qty;
 
-
       setBalance(prev => prev + totalAmount);
       
       setHoldings(prev => {
-        return prev.map(h => {
+        const nextList = prev.map(h => {
           if (h.symbol === selectedStock.symbol) {
             const nextQty = h.quantity - qty;
             const nextTotalCost = h.totalCost - originalCostOfSoldShares;
@@ -336,6 +430,8 @@ export default function Dashboard() {
           }
           return h;
         }).filter(h => h.quantity > 0);
+        recordEquityPoint(balance + totalAmount, nextList);
+        return nextList;
       });
     }
 
@@ -390,7 +486,8 @@ export default function Dashboard() {
     const matchesSearch = s.symbol.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           s.name.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesFilter = signalFilter === 'ALL' || s.signal === signalFilter;
-    return matchesSearch && matchesFilter;
+    const matchesIndex = selectedIndexGroup === 'ALL' || s.indexGroup === selectedIndexGroup;
+    return matchesSearch && matchesFilter && matchesIndex;
   });
 
   // Calculate portfolio stats
@@ -892,6 +989,9 @@ export default function Dashboard() {
         <button className={`tab-btn ${activeTab === 'GLOSSARY' ? 'active' : ''}`} onClick={() => setActiveTab('GLOSSARY')}>
           <BookOpen size={16} /> Glossary Reference
         </button>
+        <button className={`tab-btn ${activeTab === 'QUIZ' ? 'active' : ''}`} onClick={() => setActiveTab('QUIZ')}>
+          <HelpCircle size={16} /> Chart Quiz
+        </button>
       </div>
 
       {/* Technical analysis guidebook popover */}
@@ -926,6 +1026,22 @@ export default function Dashboard() {
               className="search-input"
               style={{ paddingLeft: '40px' }}
             />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <select 
+              value={selectedIndexGroup} 
+              onChange={(e) => setSelectedIndexGroup(e.target.value)}
+              className="alert-select"
+              style={{ width: '100%', height: '36px', fontSize: '13px', borderRadius: '10px' }}
+            >
+              <option value="ALL">All Indian Indices</option>
+              <option value="Nifty 50">Nifty 50 (Bluechips)</option>
+              <option value="Nifty Bank">Nifty Bank (Financials)</option>
+              <option value="Nifty IT">Nifty IT (Technology)</option>
+              <option value="Nifty Auto">Nifty Auto (Automobiles)</option>
+              <option value="Nifty Metal">Nifty Metal (Commodities)</option>
+            </select>
           </div>
 
           <div className="filter-row">
@@ -1242,6 +1358,38 @@ export default function Dashboard() {
                     </span>
                   </div>
                 </div>
+
+                {/* Candlestick Pattern Scanner Card */}
+                {(() => {
+                  const pattern = detectPattern(selectedStock.history);
+                  return (
+                    <div className="glass-panel indicator-panel" style={{ gridColumn: 'span 3', padding: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span className="card-title" style={{ fontSize: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <Sliders size={14} color="var(--accent-primary)" /> Candlestick Pattern Scanner
+                        </span>
+                      </div>
+                      {pattern ? (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <strong style={{ fontSize: '15px' }}>{pattern.pattern}</strong>
+                            <span className={`badge ${pattern.type}`} style={{ fontSize: '9px', fontWeight: 700, padding: '2px 6px', borderRadius: '4px' }}>
+                              {pattern.type}
+                            </span>
+                          </div>
+                          <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', margin: 0 }}>{pattern.description}</p>
+                          <p style={{ fontSize: '11.5px', color: 'var(--accent-primary)', margin: 0, fontWeight: 500 }}>
+                            <strong>Pattern Tip:</strong> {pattern.tip}
+                          </p>
+                        </div>
+                      ) : (
+                        <p style={{ fontSize: '11.5px', color: 'var(--text-muted)', margin: 0 }}>
+                          No active reversal or consolidation patterns detected on current price action.
+                        </p>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Alert Setup Row */}
@@ -1305,6 +1453,33 @@ export default function Dashboard() {
                   <span className={`stat-num ${portfolioPnl >= 0 ? 'text-green-500' : 'text-red-500'}`} style={{ color: portfolioPnl >= 0 ? 'var(--color-buy)' : 'var(--color-sell)' }}>
                     ₹{portfolioPnl >= 0 ? '+' : ''}{portfolioPnl.toLocaleString('en-IN', { maximumFractionDigits: 2 })} ({portfolioPnlPercent.toFixed(2)}%)
                   </span>
+                </div>
+              </div>
+
+              {/* Portfolio Performance Equity Curve Chart */}
+              <div className="glass-panel" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div>
+                  <h3 style={{ fontSize: '15px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
+                    <Activity size={18} color="var(--accent-primary)" /> Portfolio Equity Growth Curve
+                  </h3>
+                  <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '4px', marginBottom: 0 }}>Visual tracking of cash + asset value fluctuations on buy/sell executions.</p>
+                </div>
+                <div style={{ width: '100%', height: '220px' }}>
+                  <ResponsiveContainer width="100%" height="100%">
+                    <AreaChart data={equityHistory} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="equityGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="var(--accent-primary)" stopOpacity={0.25}/>
+                          <stop offset="95%" stopColor="var(--accent-primary)" stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="rgba(0, 0, 0, 0.04)" vertical={false} />
+                      <XAxis dataKey="date" stroke="var(--text-muted)" fontSize={10} tickLine={false} />
+                      <YAxis stroke="var(--text-muted)" fontSize={10} domain={['auto', 'auto']} tickLine={false} />
+                      <Tooltip contentStyle={{ background: '#ffffff', border: '1px solid var(--glass-border)', borderRadius: '10px', color: 'var(--text-primary)', fontSize: '12px' }} />
+                      <Area type="monotone" dataKey="balance" name="Total Assets" stroke="var(--accent-primary)" strokeWidth={2.5} fillOpacity={1} fill="url(#equityGrad)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
                 </div>
               </div>
 
@@ -1435,10 +1610,41 @@ export default function Dashboard() {
                   />
                 </div>
 
+                <div style={{ borderTop: '1px solid var(--glass-border)', paddingTop: '12px', marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Entry Filters (AND Logic)</span>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', cursor: 'pointer', color: 'var(--text-primary)' }}>
+                    <input 
+                      type="checkbox" 
+                      checked={backtestConfig.useRsi} 
+                      onChange={(e) => setBacktestConfig({ ...backtestConfig, useRsi: e.target.checked })} 
+                      style={{ accentColor: 'var(--accent-primary)', width: '14px', height: '14px' }}
+                    />
+                    RSI Oversold Filter
+                  </label>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', cursor: 'pointer', color: 'var(--text-primary)' }}>
+                    <input 
+                      type="checkbox" 
+                      checked={backtestConfig.useMacd} 
+                      onChange={(e) => setBacktestConfig({ ...backtestConfig, useMacd: e.target.checked })} 
+                      style={{ accentColor: 'var(--accent-primary)', width: '14px', height: '14px' }}
+                    />
+                    MACD Bullish Crossover
+                  </label>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', cursor: 'pointer', color: 'var(--text-primary)' }}>
+                    <input 
+                      type="checkbox" 
+                      checked={backtestConfig.useMaCrossover} 
+                      onChange={(e) => setBacktestConfig({ ...backtestConfig, useMaCrossover: e.target.checked })} 
+                      style={{ accentColor: 'var(--accent-primary)', width: '14px', height: '14px' }}
+                    />
+                    Price &gt; Slow SMA Trend Filter
+                  </label>
+                </div>
+
                 <button 
                   onClick={handleRunBacktest}
                   className="alert-btn" 
-                  style={{ background: 'var(--accent-primary)', width: '100%', marginTop: '10px', fontWeight: 700 }}
+                  style={{ background: 'var(--accent-primary)', width: '100%', marginTop: '14px', fontWeight: 700 }}
                 >
                   RUN SIMULATION BACKTEST
                 </button>
@@ -1693,6 +1899,95 @@ export default function Dashboard() {
               </div>
             );
           })()}
+
+          {activeTab === 'QUIZ' && quizStock && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div className="glass-panel" style={{ padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+                <div>
+                  <h2 style={{ fontSize: '20px', display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', margin: 0 }}>
+                    <HelpCircle size={22} color="var(--accent-primary)" /> Technical Analysis Chart Quiz
+                  </h2>
+                  <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', margin: 0, marginTop: '4px' }}>
+                    Study the anonymized chart below. Predict where the stock price headed over the subsequent 10 days to test your pattern recognition skills!
+                  </p>
+                </div>
+                <div className="glass-panel" style={{ padding: '10px 20px', borderRadius: '12px', display: 'flex', gap: '12px', alignItems: 'center' }}>
+                  <span style={{ fontSize: '14px', fontWeight: 600 }}>Score: <span style={{ color: 'var(--accent-primary)' }}>{quizScore} pts</span></span>
+                </div>
+              </div>
+
+              <div className="glass-panel" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: 700, margin: 0 }}>
+                  Active Challenge: <span style={{ color: 'var(--accent-secondary)' }}>Anonymized Asset Candlestick Path</span>
+                </h3>
+
+                <div style={{ width: '100%', height: '320px' }}>
+                  <ResponsiveContainer width="100%" height="100%">
+                    <AreaChart data={quizAnswered ? quizFullHistory : quizVisibleHistory} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="quizGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="var(--accent-primary)" stopOpacity={0.25}/>
+                          <stop offset="95%" stopColor="var(--accent-primary)" stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="rgba(0, 0, 0, 0.04)" vertical={false} />
+                      <XAxis stroke="var(--text-muted)" fontSize={10} tickLine={false} />
+                      <YAxis stroke="var(--text-muted)" fontSize={10} domain={['auto', 'auto']} tickLine={false} />
+                      <Tooltip contentStyle={{ background: '#ffffff', border: '1px solid var(--glass-border)', borderRadius: '10px', color: 'var(--text-primary)', fontSize: '12px' }} />
+                      <Area type="monotone" dataKey="close" name="Close Price" stroke="var(--accent-primary)" strokeWidth={2} fillOpacity={1} fill="url(#quizGrad)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </div>
+
+                {!quizAnswered ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center' }}>
+                    <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>Based on this technical chart structure, what is your prediction for the next 10 days?</p>
+                    <div style={{ display: 'flex', gap: '12px', width: '100%', maxWidth: '480px' }}>
+                      <button 
+                        onClick={() => handleQuizAnswer('BUY')} 
+                        className="alert-btn" 
+                        style={{ flex: 1, background: 'var(--color-buy-bg)', color: 'var(--color-buy)', border: '1px solid var(--color-buy-border)', fontWeight: 700 }}
+                      >
+                        Go Long (BUY)
+                      </button>
+                      <button 
+                        onClick={() => handleQuizAnswer('SELL')} 
+                        className="alert-btn" 
+                        style={{ flex: 1, background: 'var(--color-sell-bg)', color: 'var(--color-sell)', border: '1px solid var(--color-sell-border)', fontWeight: 700 }}
+                      >
+                        Go Short (SELL)
+                      </button>
+                      <button 
+                        onClick={() => handleQuizAnswer('HOLD')} 
+                        className="alert-btn" 
+                        style={{ flex: 1, background: 'var(--color-hold-bg)', color: 'var(--color-hold)', border: '1px solid var(--color-hold-border)', fontWeight: 700 }}
+                      >
+                        Neutral (HOLD)
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'center', background: 'rgba(0,0,0,0.02)', padding: '20px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
+                    <div style={{ textAlign: 'center' }}>
+                      <h4 style={{ fontSize: '15px', fontWeight: 700, margin: '0 0 6px 0', color: quizActualResult.includes('Correct!') ? 'var(--color-buy)' : 'var(--color-sell)' }}>
+                        {quizActualResult.includes('Correct!') ? '🎉 Challenge Passed!' : '❌ Challenge Failed'}
+                      </h4>
+                      <p style={{ fontSize: '13px', color: 'var(--text-secondary)', margin: 0 }}>
+                        {quizActualResult} (Asset was actually **{quizStock.symbol}**)
+                      </p>
+                    </div>
+                    <button 
+                      onClick={() => startNewQuiz()} 
+                      className="alert-btn" 
+                      style={{ background: 'var(--accent-primary)', padding: '8px 24px', fontWeight: 700 }}
+                    >
+                      Next Challenge
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

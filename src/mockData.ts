@@ -381,10 +381,21 @@ export function runBacktest(history: HistoricalData[], config: BacktestConfig): 
     const rsi = calculateRSI(subCloses, config.rsiPeriod);
     const emaFast = calculateEMA(subCloses, config.emaFast);
     const smaSlow = calculateSMA(subCloses, config.smaSlow);
+    const { macdLine, signalLine } = calculateMACD(subCloses);
 
-    // Simulated Strategy: Buy if RSI is oversold and price is above SMA, Sell if RSI is overbought or below EMA
+    // Dynamic configuration checks (AND logic)
+    const rsiMatch = !config.useRsi || (rsi < config.rsiOversold);
+    const maMatch = !config.useMaCrossover || (currentPrice > smaSlow);
+    const macdMatch = !config.useMacd || (macdLine > signalLine);
+
+    // If no indicators are checked, default to RSI + MA logic for compatibility
+    const hasActiveFilters = config.useRsi || config.useMacd || config.useMaCrossover;
+    const shouldEnter = hasActiveFilters 
+      ? (rsiMatch && maMatch && macdMatch)
+      : (rsi < config.rsiOversold && currentPrice > smaSlow);
+
     if (positionSize === 0) {
-      if (rsi < config.rsiOversold && currentPrice > smaSlow) {
+      if (shouldEnter) {
         positionSize = balance / currentPrice;
         entryPrice = currentPrice;
         balance = 0;
@@ -393,7 +404,7 @@ export function runBacktest(history: HistoricalData[], config: BacktestConfig): 
       // Exit condition (Sell): Overbought RSI or price crosses below fast EMA
       const targetHit = currentPrice >= entryPrice * 1.08;
       const stopHit = currentPrice <= entryPrice * 0.95;
-      const indicatorExit = rsi > config.rsiOverbought || currentPrice < emaFast;
+      const indicatorExit = (config.useRsi && rsi > config.rsiOverbought) || currentPrice < emaFast;
 
       if (targetHit || stopHit || indicatorExit) {
         const exitValue = positionSize * currentPrice;

@@ -79,6 +79,9 @@ export interface BacktestConfig {
   rsiOverbought: number;
   emaFast: number;
   smaSlow: number;
+  useRsi: boolean;
+  useMacd: boolean;
+  useMaCrossover: boolean;
 }
 
 export interface BacktestResults {

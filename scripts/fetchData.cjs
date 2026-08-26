@@ -2,21 +2,54 @@ const fs = require('fs');
 const path = require('path');
 
 const stockTemplates = [
-  { symbol: 'RELIANCE', name: 'Reliance Industries Ltd.', sector: 'Energy & Conglomerate' },
-  { symbol: 'TCS', name: 'Tata Consultancy Services Ltd.', sector: 'Information Technology' },
-  { symbol: 'HDFCBANK', name: 'HDFC Bank Ltd.', sector: 'Financial Services' },
-  { symbol: 'INFY', name: 'Infosys Ltd.', sector: 'Information Technology' },
-  { symbol: 'ICICIBANK', name: 'ICICI Bank Ltd.', sector: 'Financial Services' },
-  { symbol: 'SBIN', name: 'State Bank of India', sector: 'Financial Services' },
-  { symbol: 'BHARTIARTL', name: 'Bharti Airtel Ltd.', sector: 'Telecommunications' },
-  { symbol: 'LT', name: 'Larsen & Toubro Ltd.', sector: 'Construction & Engineering' },
-  { symbol: 'ITC', name: 'ITC Ltd.', sector: 'Fast Moving Consumer Goods' },
-  { symbol: 'HINDUNILVR', name: 'Hindustan Unilever Ltd.', sector: 'Fast Moving Consumer Goods' },
-  { symbol: 'MARUTI', name: 'Maruti Suzuki India Ltd.', sector: 'Automobile' },
-  { symbol: 'M&M', name: 'Mahindra & Mahindra Ltd.', sector: 'Automobile' },
-  { symbol: 'TATASTEEL', name: 'Tata Steel Ltd.', sector: 'Metals & Mining' },
-  { symbol: 'SUNPHARMA', name: 'Sun Pharmaceutical Industries Ltd.', sector: 'Healthcare & Pharma' },
-  { symbol: 'WIPRO', name: 'Wipro Ltd.', sector: 'Information Technology' }
+  // Nifty 50
+  { symbol: 'RELIANCE', name: 'Reliance Industries Ltd.', sector: 'Energy & Conglomerate', indexGroup: 'Nifty 50' },
+  { symbol: 'TCS', name: 'Tata Consultancy Services Ltd.', sector: 'Information Technology', indexGroup: 'Nifty 50' },
+  { symbol: 'INFY', name: 'Infosys Ltd.', sector: 'Information Technology', indexGroup: 'Nifty 50' },
+  { symbol: 'HDFCBANK', name: 'HDFC Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty 50' },
+  { symbol: 'ICICIBANK', name: 'ICICI Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty 50' },
+  { symbol: 'SBIN', name: 'State Bank of India', sector: 'Financial Services', indexGroup: 'Nifty 50' },
+  { symbol: 'BHARTIARTL', name: 'Bharti Airtel Ltd.', sector: 'Telecommunications', indexGroup: 'Nifty 50' },
+  { symbol: 'LT', name: 'Larsen & Toubro Ltd.', sector: 'Construction & Engineering', indexGroup: 'Nifty 50' },
+  { symbol: 'ITC', name: 'ITC Ltd.', sector: 'Fast Moving Consumer Goods', indexGroup: 'Nifty 50' },
+  { symbol: 'HINDUNILVR', name: 'Hindustan Unilever Ltd.', sector: 'Fast Moving Consumer Goods', indexGroup: 'Nifty 50' },
+  { symbol: 'POWERGRID', name: 'Power Grid Corp of India Ltd.', sector: 'Energy & Utilities', indexGroup: 'Nifty 50' },
+  { symbol: 'NTPC', name: 'NTPC Ltd.', sector: 'Energy & Utilities', indexGroup: 'Nifty 50' },
+  { symbol: 'ONGC', name: 'Oil & Natural Gas Corp Ltd.', sector: 'Energy & Utilities', indexGroup: 'Nifty 50' },
+  { symbol: 'JSWSTEEL', name: 'JSW Steel Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty 50' },
+  { symbol: 'TITAN', name: 'Titan Company Ltd.', sector: 'Consumer Goods', indexGroup: 'Nifty 50' },
+
+  // Nifty Bank
+  { symbol: 'KOTAKBANK', name: 'Kotak Mahindra Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'AXISBANK', name: 'Axis Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'INDUSINDBK', name: 'IndusInd Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'PNB', name: 'Punjab National Bank', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'BANKBARODA', name: 'Bank of Baroda', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'FEDERALBNK', name: 'Federal Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+  { symbol: 'IDFCFIRSTB', name: 'IDFC First Bank Ltd.', sector: 'Financial Services', indexGroup: 'Nifty Bank' },
+
+  // Nifty IT
+  { symbol: 'WIPRO', name: 'Wipro Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+  { symbol: 'HCLTECH', name: 'HCL Technologies Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+  { symbol: 'TECHM', name: 'Tech Mahindra Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+  { symbol: 'LTTS', name: 'L&T Technology Services Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+  { symbol: 'COFORGE', name: 'Coforge Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+  { symbol: 'PERSISTENT', name: 'Persistent Systems Ltd.', sector: 'Information Technology', indexGroup: 'Nifty IT' },
+
+  // Nifty Auto
+  { symbol: 'MARUTI', name: 'Maruti Suzuki India Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+  { symbol: 'M&M', name: 'Mahindra & Mahindra Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+  { symbol: 'BAJAJ-AUTO', name: 'Bajaj Auto Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+  { symbol: 'HEROMOTOCO', name: 'Hero MotoCorp Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+  { symbol: 'EICHERMOT', name: 'Eicher Motors Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+  { symbol: 'TVSMOTOR', name: 'TVS Motor Company Ltd.', sector: 'Automobile', indexGroup: 'Nifty Auto' },
+
+  // Nifty Metal
+  { symbol: 'TATASTEEL', name: 'Tata Steel Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty Metal' },
+  { symbol: 'HINDALCO', name: 'Hindalco Industries Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty Metal' },
+  { symbol: 'VEDL', name: 'Vedanta Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty Metal' },
+  { symbol: 'SAIL', name: 'Steel Authority of India Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty Metal' },
+  { symbol: 'NATIONALUM', name: 'National Aluminium Co Ltd.', sector: 'Metals & Mining', indexGroup: 'Nifty Metal' }
 ];
 
 function calculateSMA(data, period) {
@@ -194,6 +227,7 @@ async function fetchStockData(template) {
       symbol: template.symbol,
       name: template.name,
       sector: template.sector,
+      indexGroup: template.indexGroup,
       price: currentPrice,
       change,
       changePercent,
