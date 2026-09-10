@@ -4,25 +4,25 @@
     "name": "Reliance Industries Ltd.",
     "sector": "Energy & Conglomerate",
     "indexGroup": "Nifty 50",
-    "price": 1272.2,
-    "change": -6.8,
-    "changePercent": -0.53,
-    "volume": 6163097,
+    "price": 1274,
+    "change": -5,
+    "changePercent": -0.39,
+    "volume": 9290437,
     "high24h": 1285.3,
-    "low24h": 1270,
+    "low24h": 1266.3,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1272.2,
-    "targetPrice": 1144.98,
-    "stopLoss": 1335.81,
+    "entryPrice": 1274,
+    "targetPrice": 1146.6,
+    "stopLoss": 1337.7,
     "indicators": {
-      "rsi": 41.02,
-      "macdLine": -4.43,
-      "signalLine": -1.17,
-      "histogram": -3.27,
-      "ema20": 1299.76,
-      "sma50": 1302.09
+      "rsi": 41.46,
+      "macdLine": -4.29,
+      "signalLine": -1.14,
+      "histogram": -3.15,
+      "ema20": 1299.93,
+      "sma50": 1302.13
     },
     "history": [
       {
@@ -689,11 +689,11 @@
         "date": "2026-09-10",
         "open": 1278.5,
         "high": 1285.3,
-        "low": 1270,
-        "close": 1272.2,
-        "volume": 6163097,
-        "ema20": 1299.76,
-        "sma50": 1302.09
+        "low": 1266.3,
+        "close": 1274,
+        "volume": 9290437,
+        "ema20": 1299.93,
+        "sma50": 1302.13
       }
     ]
   },
@@ -702,25 +702,25 @@
     "name": "Tata Consultancy Services Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty 50",
-    "price": 2198.5,
-    "change": -9.5,
-    "changePercent": -0.43,
-    "volume": 1918368,
+    "price": 2204.1,
+    "change": -3.9,
+    "changePercent": -0.18,
+    "volume": 2490349,
     "high24h": 2232,
     "low24h": 2190.6,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 2198.5,
-    "targetPrice": 1978.65,
-    "stopLoss": 2308.43,
+    "entryPrice": 2204.1,
+    "targetPrice": 1983.69,
+    "stopLoss": 2314.3,
     "indicators": {
-      "rsi": 38.01,
-      "macdLine": -18.01,
-      "signalLine": -1.38,
-      "histogram": -16.63,
-      "ema20": 2293.95,
-      "sma50": 2286.09
+      "rsi": 38.5,
+      "macdLine": -17.56,
+      "signalLine": -1.29,
+      "histogram": -16.27,
+      "ema20": 2294.49,
+      "sma50": 2286.2
     },
     "history": [
       {
@@ -1388,10 +1388,10 @@
         "open": 2199,
         "high": 2232,
         "low": 2190.6,
-        "close": 2198.5,
-        "volume": 1918368,
-        "ema20": 2293.95,
-        "sma50": 2286.09
+        "close": 2204.1,
+        "volume": 2490349,
+        "ema20": 2294.49,
+        "sma50": 2286.2
       }
     ]
   },
@@ -1400,25 +1400,25 @@
     "name": "Infosys Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty 50",
-    "price": 1031.7,
-    "change": -3.3,
-    "changePercent": -0.32,
-    "volume": 6979737,
+    "price": 1036.5,
+    "change": 1.5,
+    "changePercent": 0.14,
+    "volume": 8997421,
     "high24h": 1046.6,
     "low24h": 1027.3,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1031.7,
-    "targetPrice": 928.53,
-    "stopLoss": 1083.29,
+    "entryPrice": 1036.5,
+    "targetPrice": 932.85,
+    "stopLoss": 1088.33,
     "indicators": {
-      "rsi": 31.27,
-      "macdLine": -16.95,
-      "signalLine": -4.14,
-      "histogram": -12.8,
-      "ema20": 1109.31,
-      "sma50": 1113.66
+      "rsi": 32.14,
+      "macdLine": -16.56,
+      "signalLine": -4.07,
+      "histogram": -12.5,
+      "ema20": 1109.77,
+      "sma50": 1113.76
     },
     "history": [
       {
@@ -2086,10 +2086,10 @@
         "open": 1039.6,
         "high": 1046.6,
         "low": 1027.3,
-        "close": 1031.7,
-        "volume": 6979737,
-        "ema20": 1109.31,
-        "sma50": 1113.66
+        "close": 1036.5,
+        "volume": 8997421,
+        "ema20": 1109.77,
+        "sma50": 1113.76
       }
     ]
   },
@@ -2098,25 +2098,25 @@
     "name": "HDFC Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty 50",
-    "price": 692.4,
-    "change": 5.3,
-    "changePercent": 0.77,
-    "volume": 21150866,
+    "price": 693.8,
+    "change": 6.7,
+    "changePercent": 0.98,
+    "volume": 27103195,
     "high24h": 694.5,
     "low24h": 686.2,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 692.4,
-    "targetPrice": 623.16,
-    "stopLoss": 727.02,
+    "entryPrice": 693.8,
+    "targetPrice": 624.42,
+    "stopLoss": 728.49,
     "indicators": {
-      "rsi": 33.83,
-      "macdLine": -12.89,
-      "signalLine": -11.99,
-      "histogram": -0.9,
-      "ema20": 714.08,
-      "sma50": 748
+      "rsi": 34.84,
+      "macdLine": -12.78,
+      "signalLine": -11.97,
+      "histogram": -0.81,
+      "ema20": 714.21,
+      "sma50": 748.03
     },
     "history": [
       {
@@ -2784,10 +2784,10 @@
         "open": 687.1,
         "high": 694.5,
         "low": 686.2,
-        "close": 692.4,
-        "volume": 21150866,
-        "ema20": 714.08,
-        "sma50": 748
+        "close": 693.8,
+        "volume": 27103195,
+        "ema20": 714.21,
+        "sma50": 748.03
       }
     ]
   },
@@ -2796,25 +2796,25 @@
     "name": "ICICI Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty 50",
-    "price": 1382.6,
-    "change": -6.5,
-    "changePercent": -0.47,
-    "volume": 6079537,
+    "price": 1384.5,
+    "change": -4.6,
+    "changePercent": -0.33,
+    "volume": 10520240,
     "high24h": 1393,
-    "low24h": 1378.8,
+    "low24h": 1373.9,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1382.6,
-    "targetPrice": 1244.34,
-    "stopLoss": 1451.73,
+    "entryPrice": 1384.5,
+    "targetPrice": 1246.05,
+    "stopLoss": 1453.73,
     "indicators": {
-      "rsi": 38.18,
-      "macdLine": -5.43,
-      "signalLine": 0.07,
-      "histogram": -5.5,
-      "ema20": 1417.8,
-      "sma50": 1425.03
+      "rsi": 38.63,
+      "macdLine": -5.28,
+      "signalLine": 0.1,
+      "histogram": -5.38,
+      "ema20": 1417.99,
+      "sma50": 1425.07
     },
     "history": [
       {
@@ -3481,11 +3481,11 @@
         "date": "2026-09-10",
         "open": 1385.9,
         "high": 1393,
-        "low": 1378.8,
-        "close": 1382.6,
-        "volume": 6079537,
-        "ema20": 1417.8,
-        "sma50": 1425.03
+        "low": 1373.9,
+        "close": 1384.5,
+        "volume": 10520240,
+        "ema20": 1417.99,
+        "sma50": 1425.07
       }
     ]
   },
@@ -3494,25 +3494,25 @@
     "name": "State Bank of India",
     "sector": "Financial Services",
     "indexGroup": "Nifty 50",
-    "price": 1004.8,
-    "change": 4.3,
-    "changePercent": 0.43,
-    "volume": 4184227,
+    "price": 1009.7,
+    "change": 9.2,
+    "changePercent": 0.92,
+    "volume": 5503573,
     "high24h": 1011.9,
-    "low24h": 1001.5,
+    "low24h": 1001,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1004.8,
-    "targetPrice": 904.32,
-    "stopLoss": 1055.04,
+    "entryPrice": 1009.7,
+    "targetPrice": 908.73,
+    "stopLoss": 1060.19,
     "indicators": {
-      "rsi": 37.35,
-      "macdLine": -11.25,
-      "signalLine": -5.87,
-      "histogram": -5.38,
-      "ema20": 1029.8,
-      "sma50": 1039.28
+      "rsi": 39.82,
+      "macdLine": -10.86,
+      "signalLine": -5.79,
+      "histogram": -5.07,
+      "ema20": 1030.27,
+      "sma50": 1039.38
     },
     "history": [
       {
@@ -4179,11 +4179,11 @@
         "date": "2026-09-10",
         "open": 1002,
         "high": 1011.9,
-        "low": 1001.5,
-        "close": 1004.8,
-        "volume": 4184227,
-        "ema20": 1029.8,
-        "sma50": 1039.28
+        "low": 1001,
+        "close": 1009.7,
+        "volume": 5503573,
+        "ema20": 1030.27,
+        "sma50": 1039.38
       }
     ]
   },
@@ -4192,25 +4192,25 @@
     "name": "Bharti Airtel Ltd.",
     "sector": "Telecommunications",
     "indexGroup": "Nifty 50",
-    "price": 1839.4,
-    "change": 24.7,
-    "changePercent": 1.36,
-    "volume": 3023008,
+    "price": 1839,
+    "change": 24.3,
+    "changePercent": 1.34,
+    "volume": 4588009,
     "high24h": 1849,
     "low24h": 1814,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1839.4,
-    "targetPrice": 1655.46,
-    "stopLoss": 1931.37,
+    "entryPrice": 1839,
+    "targetPrice": 1655.1,
+    "stopLoss": 1930.95,
     "indicators": {
-      "rsi": 42.19,
-      "macdLine": -25.7,
+      "rsi": 42.12,
+      "macdLine": -25.73,
       "signalLine": -18.66,
-      "histogram": -7.04,
-      "ema20": 1878.19,
-      "sma50": 1917.47
+      "histogram": -7.06,
+      "ema20": 1878.15,
+      "sma50": 1917.46
     },
     "history": [
       {
@@ -4878,10 +4878,10 @@
         "open": 1815.1,
         "high": 1849,
         "low": 1814,
-        "close": 1839.4,
-        "volume": 3023008,
-        "ema20": 1878.19,
-        "sma50": 1917.47
+        "close": 1839,
+        "volume": 4588009,
+        "ema20": 1878.15,
+        "sma50": 1917.46
       }
     ]
   },
@@ -4890,25 +4890,25 @@
     "name": "Larsen & Toubro Ltd.",
     "sector": "Construction & Engineering",
     "indexGroup": "Nifty 50",
-    "price": 3924.2,
-    "change": 1.6,
-    "changePercent": 0.04,
-    "volume": 1106131,
+    "price": 3955,
+    "change": 32.4,
+    "changePercent": 0.83,
+    "volume": 1375980,
     "high24h": 3965.5,
     "low24h": 3910,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 3924.2,
-    "targetPrice": 3531.78,
-    "stopLoss": 4120.41,
+    "entryPrice": 3955,
+    "targetPrice": 3559.5,
+    "stopLoss": 4152.75,
     "indicators": {
-      "rsi": 39.7,
-      "macdLine": -16.99,
-      "signalLine": -0.1,
-      "histogram": -16.89,
-      "ema20": 3993.85,
-      "sma50": 3966.79
+      "rsi": 44.41,
+      "macdLine": -14.54,
+      "signalLine": 0.39,
+      "histogram": -14.93,
+      "ema20": 3996.78,
+      "sma50": 3967.41
     },
     "history": [
       {
@@ -5576,10 +5576,10 @@
         "open": 3949.4,
         "high": 3965.5,
         "low": 3910,
-        "close": 3924.2,
-        "volume": 1106131,
-        "ema20": 3993.85,
-        "sma50": 3966.79
+        "close": 3955,
+        "volume": 1375980,
+        "ema20": 3996.78,
+        "sma50": 3967.41
       }
     ]
   },
@@ -5588,25 +5588,25 @@
     "name": "ITC Ltd.",
     "sector": "Fast Moving Consumer Goods",
     "indexGroup": "Nifty 50",
-    "price": 260.1,
-    "change": -0.7,
-    "changePercent": -0.27,
-    "volume": 14105453,
+    "price": 259.3,
+    "change": -1.5,
+    "changePercent": -0.58,
+    "volume": 17444123,
     "high24h": 263.9,
-    "low24h": 259.45,
+    "low24h": 259.1,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 260.1,
-    "targetPrice": 234.09,
-    "stopLoss": 273.11,
+    "entryPrice": 259.3,
+    "targetPrice": 233.37,
+    "stopLoss": 272.27,
     "indicators": {
-      "rsi": 35.95,
-      "macdLine": -4.7,
-      "signalLine": -4.53,
-      "histogram": -0.17,
-      "ema20": 267.26,
-      "sma50": 276.51
+      "rsi": 35.16,
+      "macdLine": -4.76,
+      "signalLine": -4.55,
+      "histogram": -0.22,
+      "ema20": 267.18,
+      "sma50": 276.5
     },
     "history": [
       {
@@ -6273,11 +6273,11 @@
         "date": "2026-09-10",
         "open": 261,
         "high": 263.9,
-        "low": 259.45,
-        "close": 260.1,
-        "volume": 14105453,
-        "ema20": 267.26,
-        "sma50": 276.51
+        "low": 259.1,
+        "close": 259.3,
+        "volume": 17444123,
+        "ema20": 267.18,
+        "sma50": 276.5
       }
     ]
   },
@@ -6286,25 +6286,25 @@
     "name": "Hindustan Unilever Ltd.",
     "sector": "Fast Moving Consumer Goods",
     "indexGroup": "Nifty 50",
-    "price": 1943.1,
-    "change": -1.9,
-    "changePercent": -0.1,
-    "volume": 809293,
+    "price": 1942.3,
+    "change": -2.7,
+    "changePercent": -0.14,
+    "volume": 1232298,
     "high24h": 1950,
     "low24h": 1936,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1943.1,
-    "targetPrice": 1748.79,
-    "stopLoss": 2040.25,
+    "entryPrice": 1942.3,
+    "targetPrice": 1748.07,
+    "stopLoss": 2039.41,
     "indicators": {
-      "rsi": 32.91,
-      "macdLine": -36.47,
-      "signalLine": -33.54,
-      "histogram": -2.92,
-      "ema20": 2003.83,
-      "sma50": 2079.71
+      "rsi": 32.81,
+      "macdLine": -36.53,
+      "signalLine": -33.55,
+      "histogram": -2.98,
+      "ema20": 2003.75,
+      "sma50": 2079.69
     },
     "history": [
       {
@@ -6962,10 +6962,10 @@
         "open": 1940,
         "high": 1950,
         "low": 1936,
-        "close": 1943.1,
-        "volume": 809293,
-        "ema20": 2003.83,
-        "sma50": 2079.71
+        "close": 1942.3,
+        "volume": 1232298,
+        "ema20": 2003.75,
+        "sma50": 2079.69
       }
     ]
   },
@@ -6974,25 +6974,25 @@
     "name": "Power Grid Corp of India Ltd.",
     "sector": "Energy & Utilities",
     "indexGroup": "Nifty 50",
-    "price": 271.1,
-    "change": 5.35,
-    "changePercent": 2.01,
-    "volume": 8802004,
-    "high24h": 271.7,
+    "price": 271.75,
+    "change": 5.9,
+    "changePercent": 2.22,
+    "volume": 12182950,
+    "high24h": 271.75,
     "low24h": 265.3,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 271.1,
-    "targetPrice": 292.79,
-    "stopLoss": 260.26,
+    "entryPrice": 271.75,
+    "targetPrice": 293.49,
+    "stopLoss": 260.88,
     "indicators": {
-      "rsi": 51.6,
-      "macdLine": -2.69,
-      "signalLine": -3.58,
-      "histogram": 0.89,
-      "ema20": 268.67,
-      "sma50": 276.71
+      "rsi": 53.28,
+      "macdLine": -2.46,
+      "signalLine": -3.42,
+      "histogram": 0.96,
+      "ema20": 268.51,
+      "sma50": 276.29
     },
     "history": [
       {
@@ -7636,14 +7636,24 @@
         "sma50": 277.02
       },
       {
+        "date": "2026-09-09",
+        "open": 265,
+        "high": 269.25,
+        "low": 264.5,
+        "close": 265.85,
+        "volume": 11738891,
+        "ema20": 268.17,
+        "sma50": 276.61
+      },
+      {
         "date": "2026-09-10",
         "open": 265.85,
-        "high": 271.7,
+        "high": 271.75,
         "low": 265.3,
-        "close": 271.1,
-        "volume": 8802004,
-        "ema20": 268.67,
-        "sma50": 276.71
+        "close": 271.75,
+        "volume": 12182950,
+        "ema20": 268.51,
+        "sma50": 276.29
       }
     ]
   },
@@ -7652,25 +7662,25 @@
     "name": "NTPC Ltd.",
     "sector": "Energy & Utilities",
     "indexGroup": "Nifty 50",
-    "price": 334.35,
-    "change": -0.15,
-    "changePercent": -0.04,
-    "volume": 4601003,
+    "price": 335,
+    "change": 0.5,
+    "changePercent": 0.15,
+    "volume": 6905719,
     "high24h": 335.7,
-    "low24h": 333.35,
+    "low24h": 333.1,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 334.35,
-    "targetPrice": 361.1,
-    "stopLoss": 320.98,
+    "entryPrice": 335,
+    "targetPrice": 361.8,
+    "stopLoss": 321.6,
     "indicators": {
-      "rsi": 46.66,
-      "macdLine": -2.9,
-      "signalLine": -3.54,
-      "histogram": 0.64,
-      "ema20": 334.64,
-      "sma50": 341.64
+      "rsi": 47.84,
+      "macdLine": -2.85,
+      "signalLine": -3.53,
+      "histogram": 0.68,
+      "ema20": 334.7,
+      "sma50": 341.66
     },
     "history": [
       {
@@ -8337,11 +8347,11 @@
         "date": "2026-09-10",
         "open": 335.65,
         "high": 335.7,
-        "low": 333.35,
-        "close": 334.35,
-        "volume": 4601003,
-        "ema20": 334.64,
-        "sma50": 341.64
+        "low": 333.1,
+        "close": 335,
+        "volume": 6905719,
+        "ema20": 334.7,
+        "sma50": 341.66
       }
     ]
   },
@@ -8350,25 +8360,25 @@
     "name": "Oil & Natural Gas Corp Ltd.",
     "sector": "Energy & Utilities",
     "indexGroup": "Nifty 50",
-    "price": 236.21,
-    "change": 2.19,
-    "changePercent": 0.94,
-    "volume": 9371959,
+    "price": 237.27,
+    "change": 3.25,
+    "changePercent": 1.39,
+    "volume": 12770398,
     "high24h": 239.8,
     "low24h": 235.6,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 236.21,
-    "targetPrice": 255.11,
-    "stopLoss": 226.76,
+    "entryPrice": 237.27,
+    "targetPrice": 256.25,
+    "stopLoss": 227.78,
     "indicators": {
-      "rsi": 48.25,
-      "macdLine": -1.41,
-      "signalLine": -1.8,
-      "histogram": 0.39,
-      "ema20": 236.03,
-      "sma50": 240.44
+      "rsi": 50.56,
+      "macdLine": -1.33,
+      "signalLine": -1.78,
+      "histogram": 0.45,
+      "ema20": 236.13,
+      "sma50": 240.47
     },
     "history": [
       {
@@ -9036,10 +9046,10 @@
         "open": 236.1,
         "high": 239.8,
         "low": 235.6,
-        "close": 236.21,
-        "volume": 9371959,
-        "ema20": 236.03,
-        "sma50": 240.44
+        "close": 237.27,
+        "volume": 12770398,
+        "ema20": 236.13,
+        "sma50": 240.47
       }
     ]
   },
@@ -9048,25 +9058,25 @@
     "name": "JSW Steel Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty 50",
-    "price": 1295.6,
-    "change": -14.4,
-    "changePercent": -1.1,
-    "volume": 673843,
+    "price": 1304,
+    "change": -6,
+    "changePercent": -0.46,
+    "volume": 1102534,
     "high24h": 1311.3,
-    "low24h": 1295,
+    "low24h": 1292.7,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1295.6,
-    "targetPrice": 1166.04,
-    "stopLoss": 1360.38,
+    "entryPrice": 1304,
+    "targetPrice": 1173.6,
+    "stopLoss": 1369.2,
     "indicators": {
-      "rsi": 48.59,
-      "macdLine": 6.45,
-      "signalLine": 10.13,
-      "histogram": -3.68,
-      "ema20": 1303.97,
-      "sma50": 1278.96
+      "rsi": 51.11,
+      "macdLine": 7.12,
+      "signalLine": 10.26,
+      "histogram": -3.14,
+      "ema20": 1304.77,
+      "sma50": 1279.13
     },
     "history": [
       {
@@ -9733,11 +9743,11 @@
         "date": "2026-09-10",
         "open": 1301,
         "high": 1311.3,
-        "low": 1295,
-        "close": 1295.6,
-        "volume": 673843,
-        "ema20": 1303.97,
-        "sma50": 1278.96
+        "low": 1292.7,
+        "close": 1304,
+        "volume": 1102534,
+        "ema20": 1304.77,
+        "sma50": 1279.13
       }
     ]
   },
@@ -9746,25 +9756,25 @@
     "name": "Titan Company Ltd.",
     "sector": "Consumer Goods",
     "indexGroup": "Nifty 50",
-    "price": 5000.5,
-    "change": -4.5,
-    "changePercent": -0.09,
-    "volume": 205286,
+    "price": 5021,
+    "change": 16,
+    "changePercent": 0.32,
+    "volume": 336545,
     "high24h": 5021,
     "low24h": 4974.5,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 5000.5,
-    "targetPrice": 4500.45,
-    "stopLoss": 5250.53,
+    "entryPrice": 5021,
+    "targetPrice": 4518.9,
+    "stopLoss": 5272.05,
     "indicators": {
-      "rsi": 50.78,
-      "macdLine": 30.14,
-      "signalLine": 59.09,
-      "histogram": -28.96,
-      "ema20": 5024.87,
-      "sma50": 4886.27
+      "rsi": 53.16,
+      "macdLine": 31.77,
+      "signalLine": 59.42,
+      "histogram": -27.65,
+      "ema20": 5026.82,
+      "sma50": 4886.68
     },
     "history": [
       {
@@ -10432,10 +10442,10 @@
         "open": 5000.5,
         "high": 5021,
         "low": 4974.5,
-        "close": 5000.5,
-        "volume": 205286,
-        "ema20": 5024.87,
-        "sma50": 4886.27
+        "close": 5021,
+        "volume": 336545,
+        "ema20": 5026.82,
+        "sma50": 4886.68
       }
     ]
   },
@@ -10444,25 +10454,25 @@
     "name": "Kotak Mahindra Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 414.6,
-    "change": -4.65,
-    "changePercent": -1.11,
-    "volume": 5013809,
-    "high24h": 415.95,
+    "price": 416.55,
+    "change": 2.55,
+    "changePercent": 0.62,
+    "volume": 7755240,
+    "high24h": 416.55,
     "low24h": 412.8,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 414.6,
-    "targetPrice": 447.77,
-    "stopLoss": 398.02,
+    "entryPrice": 416.55,
+    "targetPrice": 449.87,
+    "stopLoss": 399.89,
     "indicators": {
-      "rsi": 56.35,
-      "macdLine": 7.55,
-      "signalLine": 7.56,
-      "histogram": -0.01,
-      "ema20": 412,
-      "sma50": 395.97
+      "rsi": 57.91,
+      "macdLine": 6.95,
+      "signalLine": 7.43,
+      "histogram": -0.49,
+      "ema20": 412.38,
+      "sma50": 396.3
     },
     "history": [
       {
@@ -11116,14 +11126,24 @@
         "sma50": 395.69
       },
       {
+        "date": "2026-09-09",
+        "open": 418.2,
+        "high": 420.65,
+        "low": 413.95,
+        "close": 414,
+        "volume": 10886349,
+        "ema20": 411.94,
+        "sma50": 395.96
+      },
+      {
         "date": "2026-09-10",
         "open": 413.7,
-        "high": 415.95,
+        "high": 416.55,
         "low": 412.8,
-        "close": 414.6,
-        "volume": 5013809,
-        "ema20": 412,
-        "sma50": 395.97
+        "close": 416.55,
+        "volume": 7755240,
+        "ema20": 412.38,
+        "sma50": 396.3
       }
     ]
   },
@@ -11132,25 +11152,25 @@
     "name": "Axis Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 1246.5,
-    "change": 8,
-    "changePercent": 0.65,
-    "volume": 2583942,
+    "price": 1246,
+    "change": 7.5,
+    "changePercent": 0.61,
+    "volume": 4150001,
     "high24h": 1255.2,
     "low24h": 1240.4,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 1246.5,
-    "targetPrice": 1346.22,
-    "stopLoss": 1196.64,
+    "entryPrice": 1246,
+    "targetPrice": 1345.68,
+    "stopLoss": 1196.16,
     "indicators": {
-      "rsi": 47.68,
-      "macdLine": -1.45,
-      "signalLine": -1.94,
-      "histogram": 0.49,
-      "ema20": 1253.13,
-      "sma50": 1264.16
+      "rsi": 47.53,
+      "macdLine": -1.49,
+      "signalLine": -1.95,
+      "histogram": 0.46,
+      "ema20": 1253.08,
+      "sma50": 1264.15
     },
     "history": [
       {
@@ -11808,10 +11828,10 @@
         "open": 1242.1,
         "high": 1255.2,
         "low": 1240.4,
-        "close": 1246.5,
-        "volume": 2583942,
-        "ema20": 1253.13,
-        "sma50": 1264.16
+        "close": 1246,
+        "volume": 4150001,
+        "ema20": 1253.08,
+        "sma50": 1264.15
       }
     ]
   },
@@ -11820,25 +11840,25 @@
     "name": "IndusInd Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 989.7,
-    "change": -14.3,
-    "changePercent": -1.42,
-    "volume": 636504,
+    "price": 993.3,
+    "change": -10.7,
+    "changePercent": -1.07,
+    "volume": 972480,
     "high24h": 1002.7,
-    "low24h": 988.2,
+    "low24h": 986.7,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 989.7,
-    "targetPrice": 890.73,
-    "stopLoss": 1039.19,
+    "entryPrice": 993.3,
+    "targetPrice": 893.97,
+    "stopLoss": 1042.96,
     "indicators": {
-      "rsi": 45.19,
-      "macdLine": -2.9,
-      "signalLine": -1.22,
-      "histogram": -1.68,
-      "ema20": 1003.14,
-      "sma50": 1011.72
+      "rsi": 46.32,
+      "macdLine": -2.61,
+      "signalLine": -1.16,
+      "histogram": -1.45,
+      "ema20": 1003.48,
+      "sma50": 1011.79
     },
     "history": [
       {
@@ -12505,11 +12525,11 @@
         "date": "2026-09-10",
         "open": 1001.9,
         "high": 1002.7,
-        "low": 988.2,
-        "close": 989.7,
-        "volume": 636504,
-        "ema20": 1003.14,
-        "sma50": 1011.72
+        "low": 986.7,
+        "close": 993.3,
+        "volume": 972480,
+        "ema20": 1003.48,
+        "sma50": 1011.79
       }
     ]
   },
@@ -12518,25 +12538,25 @@
     "name": "Punjab National Bank",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 116.58,
-    "change": 0.97,
-    "changePercent": 0.84,
-    "volume": 14451955,
+    "price": 116.85,
+    "change": 1.24,
+    "changePercent": 1.07,
+    "volume": 18228404,
     "high24h": 118.2,
     "low24h": 115.47,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 116.58,
-    "targetPrice": 125.91,
-    "stopLoss": 111.92,
+    "entryPrice": 116.85,
+    "targetPrice": 126.2,
+    "stopLoss": 112.18,
     "indicators": {
-      "rsi": 55.83,
-      "macdLine": 0.75,
-      "signalLine": 1.01,
-      "histogram": -0.26,
-      "ema20": 115.71,
-      "sma50": 112.51
+      "rsi": 56.75,
+      "macdLine": 0.77,
+      "signalLine": 1.02,
+      "histogram": -0.24,
+      "ema20": 115.73,
+      "sma50": 112.52
     },
     "history": [
       {
@@ -13204,10 +13224,10 @@
         "open": 115.5,
         "high": 118.2,
         "low": 115.47,
-        "close": 116.58,
-        "volume": 14451955,
-        "ema20": 115.71,
-        "sma50": 112.51
+        "close": 116.85,
+        "volume": 18228404,
+        "ema20": 115.73,
+        "sma50": 112.52
       }
     ]
   },
@@ -13216,24 +13236,24 @@
     "name": "Bank of Baroda",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 237.4,
-    "change": 3.3,
-    "changePercent": 1.41,
-    "volume": 7294663,
+    "price": 237.62,
+    "change": 3.52,
+    "changePercent": 1.5,
+    "volume": 8948773,
     "high24h": 239.46,
     "low24h": 234.84,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 237.4,
-    "targetPrice": 213.66,
-    "stopLoss": 249.27,
+    "entryPrice": 237.62,
+    "targetPrice": 213.86,
+    "stopLoss": 249.5,
     "indicators": {
-      "rsi": 41.79,
-      "macdLine": -3.07,
+      "rsi": 42.21,
+      "macdLine": -3.05,
       "signalLine": -2.82,
-      "histogram": -0.25,
-      "ema20": 240.66,
+      "histogram": -0.24,
+      "ema20": 240.68,
       "sma50": 244.66
     },
     "history": [
@@ -13902,9 +13922,9 @@
         "open": 235,
         "high": 239.46,
         "low": 234.84,
-        "close": 237.4,
-        "volume": 7294663,
-        "ema20": 240.66,
+        "close": 237.62,
+        "volume": 8948773,
+        "ema20": 240.68,
         "sma50": 244.66
       }
     ]
@@ -13914,25 +13934,25 @@
     "name": "Federal Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 346.3,
-    "change": 1.3,
-    "changePercent": 0.38,
-    "volume": 3820927,
+    "price": 346,
+    "change": 1,
+    "changePercent": 0.29,
+    "volume": 5314966,
     "high24h": 347.05,
     "low24h": 343.75,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 346.3,
-    "targetPrice": 311.67,
-    "stopLoss": 363.62,
+    "entryPrice": 346,
+    "targetPrice": 311.4,
+    "stopLoss": 363.3,
     "indicators": {
-      "rsi": 47.67,
-      "macdLine": -1.53,
+      "rsi": 47.36,
+      "macdLine": -1.55,
       "signalLine": -0.49,
-      "histogram": -1.04,
-      "ema20": 348.52,
-      "sma50": 348.31
+      "histogram": -1.06,
+      "ema20": 348.49,
+      "sma50": 348.3
     },
     "history": [
       {
@@ -14600,10 +14620,10 @@
         "open": 343.85,
         "high": 347.05,
         "low": 343.75,
-        "close": 346.3,
-        "volume": 3820927,
-        "ema20": 348.52,
-        "sma50": 348.31
+        "close": 346,
+        "volume": 5314966,
+        "ema20": 348.49,
+        "sma50": 348.3
       }
     ]
   },
@@ -14612,25 +14632,25 @@
     "name": "IDFC First Bank Ltd.",
     "sector": "Financial Services",
     "indexGroup": "Nifty Bank",
-    "price": 86.74,
-    "change": 0.74,
-    "changePercent": 0.86,
-    "volume": 10498823,
+    "price": 86.84,
+    "change": 0.84,
+    "changePercent": 0.98,
+    "volume": 14635281,
     "high24h": 87.4,
     "low24h": 85.82,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 86.74,
-    "targetPrice": 93.68,
-    "stopLoss": 83.27,
+    "entryPrice": 86.84,
+    "targetPrice": 93.79,
+    "stopLoss": 83.37,
     "indicators": {
-      "rsi": 57.59,
-      "macdLine": 0.73,
+      "rsi": 57.95,
+      "macdLine": 0.74,
       "signalLine": 0.74,
-      "histogram": -0.01,
-      "ema20": 85.59,
-      "sma50": 83.79
+      "histogram": 0,
+      "ema20": 85.6,
+      "sma50": 83.8
     },
     "history": [
       {
@@ -15298,10 +15318,10 @@
         "open": 86,
         "high": 87.4,
         "low": 85.82,
-        "close": 86.74,
-        "volume": 10498823,
-        "ema20": 85.59,
-        "sma50": 83.79
+        "close": 86.84,
+        "volume": 14635281,
+        "ema20": 85.6,
+        "sma50": 83.8
       }
     ]
   },
@@ -15310,21 +15330,21 @@
     "name": "Wipro Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 166.35,
-    "change": -0.65,
-    "changePercent": -0.39,
-    "volume": 6752819,
+    "price": 166.3,
+    "change": -0.7,
+    "changePercent": -0.42,
+    "volume": 9575225,
     "high24h": 169.19,
-    "low24h": 166.2,
+    "low24h": 166,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 166.35,
-    "targetPrice": 149.72,
-    "stopLoss": 174.67,
+    "entryPrice": 166.3,
+    "targetPrice": 149.67,
+    "stopLoss": 174.62,
     "indicators": {
-      "rsi": 30.16,
-      "macdLine": -3,
+      "rsi": 30.11,
+      "macdLine": -3.01,
       "signalLine": -1.44,
       "histogram": -1.56,
       "ema20": 176.36,
@@ -15995,9 +16015,9 @@
         "date": "2026-09-10",
         "open": 167.9,
         "high": 169.19,
-        "low": 166.2,
-        "close": 166.35,
-        "volume": 6752819,
+        "low": 166,
+        "close": 166.3,
+        "volume": 9575225,
         "ema20": 176.36,
         "sma50": 178.93
       }
@@ -16008,25 +16028,25 @@
     "name": "HCL Technologies Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 1203.8,
-    "change": -26,
-    "changePercent": -2.11,
-    "volume": 1610936,
+    "price": 1207,
+    "change": -22.8,
+    "changePercent": -1.85,
+    "volume": 2197675,
     "high24h": 1237,
-    "low24h": 1201.6,
+    "low24h": 1196.9,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1203.8,
-    "targetPrice": 1083.42,
-    "stopLoss": 1263.99,
+    "entryPrice": 1207,
+    "targetPrice": 1086.3,
+    "stopLoss": 1267.35,
     "indicators": {
-      "rsi": 32.6,
-      "macdLine": -11.87,
-      "signalLine": 3.11,
-      "histogram": -14.97,
-      "ema20": 1292.09,
-      "sma50": 1280.63
+      "rsi": 32.99,
+      "macdLine": -11.61,
+      "signalLine": 3.16,
+      "histogram": -14.77,
+      "ema20": 1292.39,
+      "sma50": 1280.69
     },
     "history": [
       {
@@ -16693,11 +16713,11 @@
         "date": "2026-09-10",
         "open": 1224.8,
         "high": 1237,
-        "low": 1201.6,
-        "close": 1203.8,
-        "volume": 1610936,
-        "ema20": 1292.09,
-        "sma50": 1280.63
+        "low": 1196.9,
+        "close": 1207,
+        "volume": 2197675,
+        "ema20": 1292.39,
+        "sma50": 1280.69
       }
     ]
   },
@@ -16706,25 +16726,25 @@
     "name": "Tech Mahindra Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 1516.3,
-    "change": 8.3,
-    "changePercent": 0.55,
-    "volume": 1056080,
+    "price": 1525.8,
+    "change": 17.8,
+    "changePercent": 1.18,
+    "volume": 1405547,
     "high24h": 1544.7,
     "low24h": 1498.1,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1516.3,
-    "targetPrice": 1364.67,
-    "stopLoss": 1592.12,
+    "entryPrice": 1525.8,
+    "targetPrice": 1373.22,
+    "stopLoss": 1602.09,
     "indicators": {
-      "rsi": 35.16,
-      "macdLine": -11.74,
-      "signalLine": 1.58,
-      "histogram": -13.32,
-      "ema20": 1582.52,
-      "sma50": 1574.45
+      "rsi": 37.57,
+      "macdLine": -10.98,
+      "signalLine": 1.73,
+      "histogram": -12.72,
+      "ema20": 1583.42,
+      "sma50": 1574.64
     },
     "history": [
       {
@@ -17392,10 +17412,10 @@
         "open": 1511.9,
         "high": 1544.7,
         "low": 1498.1,
-        "close": 1516.3,
-        "volume": 1056080,
-        "ema20": 1582.52,
-        "sma50": 1574.45
+        "close": 1525.8,
+        "volume": 1405547,
+        "ema20": 1583.42,
+        "sma50": 1574.64
       }
     ]
   },
@@ -17404,25 +17424,25 @@
     "name": "L&T Technology Services Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 3372.9,
-    "change": -16.2,
-    "changePercent": -0.48,
-    "volume": 34218,
+    "price": 3377.9,
+    "change": 13.9,
+    "changePercent": 0.41,
+    "volume": 47576,
     "high24h": 3411.2,
     "low24h": 3352.5,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 3372.9,
-    "targetPrice": 3035.61,
-    "stopLoss": 3541.55,
+    "entryPrice": 3377.9,
+    "targetPrice": 3040.11,
+    "stopLoss": 3546.8,
     "indicators": {
-      "rsi": 36.7,
-      "macdLine": -12.34,
-      "signalLine": 15.17,
-      "histogram": -27.52,
-      "ema20": 3509.94,
-      "sma50": 3454.61
+      "rsi": 37.8,
+      "macdLine": -21.36,
+      "signalLine": 7.75,
+      "histogram": -29.12,
+      "ema20": 3496.6,
+      "sma50": 3461.04
     },
     "history": [
       {
@@ -18066,14 +18086,24 @@
         "sma50": 3449.95
       },
       {
+        "date": "2026-09-09",
+        "open": 3375,
+        "high": 3375,
+        "low": 3326.1,
+        "close": 3364,
+        "volume": 52404,
+        "ema20": 3509.1,
+        "sma50": 3454.44
+      },
+      {
         "date": "2026-09-10",
         "open": 3364,
         "high": 3411.2,
         "low": 3352.5,
-        "close": 3372.9,
-        "volume": 34218,
-        "ema20": 3509.94,
-        "sma50": 3454.61
+        "close": 3377.9,
+        "volume": 47576,
+        "ema20": 3496.6,
+        "sma50": 3461.04
       }
     ]
   },
@@ -18082,25 +18112,25 @@
     "name": "Coforge Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 1836.4,
-    "change": -8.6,
-    "changePercent": -0.47,
-    "volume": 2257792,
+    "price": 1833.1,
+    "change": -11.9,
+    "changePercent": -0.64,
+    "volume": 2691202,
     "high24h": 1878,
     "low24h": 1821,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1836.4,
-    "targetPrice": 1652.76,
-    "stopLoss": 1928.22,
+    "entryPrice": 1833.1,
+    "targetPrice": 1649.79,
+    "stopLoss": 1924.75,
     "indicators": {
-      "rsi": 47.67,
-      "macdLine": 48.25,
-      "signalLine": 69.9,
-      "histogram": -21.66,
-      "ema20": 1884.57,
-      "sma50": 1728.34
+      "rsi": 47.3,
+      "macdLine": 47.98,
+      "signalLine": 69.85,
+      "histogram": -21.87,
+      "ema20": 1884.25,
+      "sma50": 1728.27
     },
     "history": [
       {
@@ -18768,10 +18798,10 @@
         "open": 1842,
         "high": 1878,
         "low": 1821,
-        "close": 1836.4,
-        "volume": 2257792,
-        "ema20": 1884.57,
-        "sma50": 1728.34
+        "close": 1833.1,
+        "volume": 2691202,
+        "ema20": 1884.25,
+        "sma50": 1728.27
       }
     ]
   },
@@ -18780,25 +18810,25 @@
     "name": "Persistent Systems Ltd.",
     "sector": "Information Technology",
     "indexGroup": "Nifty IT",
-    "price": 5499.5,
-    "change": 80.5,
-    "changePercent": 1.49,
-    "volume": 429859,
+    "price": 5509.5,
+    "change": 90.5,
+    "changePercent": 1.67,
+    "volume": 516789,
     "high24h": 5560,
     "low24h": 5370.5,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 5499.5,
-    "targetPrice": 4949.55,
-    "stopLoss": 5774.48,
+    "entryPrice": 5509.5,
+    "targetPrice": 4958.55,
+    "stopLoss": 5784.98,
     "indicators": {
-      "rsi": 48.21,
-      "macdLine": 35.82,
-      "signalLine": 78.62,
-      "histogram": -42.8,
-      "ema20": 5570.93,
-      "sma50": 5387.61
+      "rsi": 48.62,
+      "macdLine": 36.61,
+      "signalLine": 78.78,
+      "histogram": -42.16,
+      "ema20": 5571.88,
+      "sma50": 5387.81
     },
     "history": [
       {
@@ -19466,10 +19496,10 @@
         "open": 5404.5,
         "high": 5560,
         "low": 5370.5,
-        "close": 5499.5,
-        "volume": 429859,
-        "ema20": 5570.93,
-        "sma50": 5387.61
+        "close": 5509.5,
+        "volume": 516789,
+        "ema20": 5571.88,
+        "sma50": 5387.81
       }
     ]
   },
@@ -19478,25 +19508,25 @@
     "name": "Maruti Suzuki India Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 12602,
-    "change": -16,
-    "changePercent": -0.13,
-    "volume": 236157,
+    "price": 12590,
+    "change": -28,
+    "changePercent": -0.22,
+    "volume": 338598,
     "high24h": 12693,
     "low24h": 12517,
     "signal": "BUY",
-    "signalStrength": 59,
+    "signalStrength": 60,
     "signalReason": "BUY signal: Stock is technically oversold (RSI is below 30). Potential reversal/rebound expected.",
-    "entryPrice": 12602,
-    "targetPrice": 13862.2,
-    "stopLoss": 11971.9,
+    "entryPrice": 12590,
+    "targetPrice": 13849,
+    "stopLoss": 11960.5,
     "indicators": {
-      "rsi": 26.96,
-      "macdLine": -316.34,
-      "signalLine": -236.12,
-      "histogram": -80.22,
-      "ema20": 13157.57,
-      "sma50": 13652.84
+      "rsi": 26.75,
+      "macdLine": -317.3,
+      "signalLine": -236.31,
+      "histogram": -80.99,
+      "ema20": 13156.43,
+      "sma50": 13652.6
     },
     "history": [
       {
@@ -20164,10 +20194,10 @@
         "open": 12679,
         "high": 12693,
         "low": 12517,
-        "close": 12602,
-        "volume": 236157,
-        "ema20": 13157.57,
-        "sma50": 13652.84
+        "close": 12590,
+        "volume": 338598,
+        "ema20": 13156.43,
+        "sma50": 13652.6
       }
     ]
   },
@@ -20176,25 +20206,25 @@
     "name": "Mahindra & Mahindra Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 3125.6,
-    "change": -24.4,
-    "changePercent": -0.77,
-    "volume": 1587109,
+    "price": 3123.8,
+    "change": -26.2,
+    "changePercent": -0.83,
+    "volume": 2140293,
     "high24h": 3146.9,
     "low24h": 3097.7,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 3125.6,
-    "targetPrice": 2813.04,
-    "stopLoss": 3281.88,
+    "entryPrice": 3123.8,
+    "targetPrice": 2811.42,
+    "stopLoss": 3279.99,
     "indicators": {
-      "rsi": 31.51,
-      "macdLine": -51.71,
-      "signalLine": -23.07,
-      "histogram": -28.64,
-      "ema20": 3256.07,
-      "sma50": 3278.5
+      "rsi": 31.37,
+      "macdLine": -51.85,
+      "signalLine": -23.1,
+      "histogram": -28.76,
+      "ema20": 3255.9,
+      "sma50": 3278.46
     },
     "history": [
       {
@@ -20862,10 +20892,10 @@
         "open": 3141.7,
         "high": 3146.9,
         "low": 3097.7,
-        "close": 3125.6,
-        "volume": 1587109,
-        "ema20": 3256.07,
-        "sma50": 3278.5
+        "close": 3123.8,
+        "volume": 2140293,
+        "ema20": 3255.9,
+        "sma50": 3278.46
       }
     ]
   },
@@ -20874,25 +20904,25 @@
     "name": "Bajaj Auto Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 11691,
-    "change": -99,
-    "changePercent": -0.84,
-    "volume": 77953,
+    "price": 11768,
+    "change": -22,
+    "changePercent": -0.19,
+    "volume": 121394,
     "high24h": 11820,
-    "low24h": 11682,
+    "low24h": 11673,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 11691,
-    "targetPrice": 10521.9,
-    "stopLoss": 12275.55,
+    "entryPrice": 11768,
+    "targetPrice": 10591.2,
+    "stopLoss": 12356.4,
     "indicators": {
-      "rsi": 49.44,
-      "macdLine": 133.93,
-      "signalLine": 199.41,
-      "histogram": -65.49,
-      "ema20": 11794.87,
-      "sma50": 11306.8
+      "rsi": 51.81,
+      "macdLine": 140.07,
+      "signalLine": 200.64,
+      "histogram": -60.57,
+      "ema20": 11802.2,
+      "sma50": 11308.34
     },
     "history": [
       {
@@ -21559,11 +21589,11 @@
         "date": "2026-09-10",
         "open": 11771,
         "high": 11820,
-        "low": 11682,
-        "close": 11691,
-        "volume": 77953,
-        "ema20": 11794.87,
-        "sma50": 11306.8
+        "low": 11673,
+        "close": 11768,
+        "volume": 121394,
+        "ema20": 11802.2,
+        "sma50": 11308.34
       }
     ]
   },
@@ -21572,25 +21602,25 @@
     "name": "Hero MotoCorp Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 5239,
-    "change": 21,
-    "changePercent": 0.4,
-    "volume": 339827,
-    "high24h": 5259.5,
+    "price": 5280,
+    "change": 62,
+    "changePercent": 1.19,
+    "volume": 501139,
+    "high24h": 5280,
     "low24h": 5169,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 5239,
-    "targetPrice": 4715.1,
-    "stopLoss": 5500.95,
+    "entryPrice": 5280,
+    "targetPrice": 4752,
+    "stopLoss": 5544,
     "indicators": {
-      "rsi": 38.85,
-      "macdLine": -55.61,
-      "signalLine": 1.96,
-      "histogram": -57.56,
-      "ema20": 5428.19,
-      "sma50": 5345.95
+      "rsi": 41.45,
+      "macdLine": -52.34,
+      "signalLine": 2.61,
+      "histogram": -54.95,
+      "ema20": 5432.1,
+      "sma50": 5346.77
     },
     "history": [
       {
@@ -22256,12 +22286,12 @@
       {
         "date": "2026-09-10",
         "open": 5235,
-        "high": 5259.5,
+        "high": 5280,
         "low": 5169,
-        "close": 5239,
-        "volume": 339827,
-        "ema20": 5428.19,
-        "sma50": 5345.95
+        "close": 5280,
+        "volume": 501139,
+        "ema20": 5432.1,
+        "sma50": 5346.77
       }
     ]
   },
@@ -22270,25 +22300,25 @@
     "name": "Eicher Motors Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 7665,
-    "change": -82.5,
-    "changePercent": -1.06,
-    "volume": 189414,
+    "price": 7697,
+    "change": -37.5,
+    "changePercent": -0.48,
+    "volume": 289056,
     "high24h": 7746,
     "low24h": 7637.5,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 7665,
-    "targetPrice": 6898.5,
-    "stopLoss": 8048.25,
+    "entryPrice": 7697,
+    "targetPrice": 6927.3,
+    "stopLoss": 8081.85,
     "indicators": {
-      "rsi": 39.34,
-      "macdLine": -32.92,
-      "signalLine": 26.03,
-      "histogram": -58.95,
-      "ema20": 7865.27,
-      "sma50": 7762.66
+      "rsi": 40.57,
+      "macdLine": -36.75,
+      "signalLine": 14.36,
+      "histogram": -51.11,
+      "ema20": 7855.23,
+      "sma50": 7775.21
     },
     "history": [
       {
@@ -22932,14 +22962,24 @@
         "sma50": 7750.83
       },
       {
+        "date": "2026-09-09",
+        "open": 7687,
+        "high": 7784.5,
+        "low": 7664.5,
+        "close": 7734.5,
+        "volume": 318638,
+        "ema20": 7871.89,
+        "sma50": 7764.05
+      },
+      {
         "date": "2026-09-10",
         "open": 7713,
         "high": 7746,
         "low": 7637.5,
-        "close": 7665,
-        "volume": 189414,
-        "ema20": 7865.27,
-        "sma50": 7762.66
+        "close": 7697,
+        "volume": 289056,
+        "ema20": 7855.23,
+        "sma50": 7775.21
       }
     ]
   },
@@ -22948,25 +22988,25 @@
     "name": "TVS Motor Company Ltd.",
     "sector": "Automobile",
     "indexGroup": "Nifty Auto",
-    "price": 4132.2,
-    "change": -1,
-    "changePercent": -0.02,
-    "volume": 380639,
+    "price": 4121.5,
+    "change": -29.6,
+    "changePercent": -0.71,
+    "volume": 550970,
     "high24h": 4184.8,
     "low24h": 4098.7,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 4132.2,
-    "targetPrice": 3718.98,
-    "stopLoss": 4338.81,
+    "entryPrice": 4121.5,
+    "targetPrice": 3709.35,
+    "stopLoss": 4327.57,
     "indicators": {
-      "rsi": 42.28,
-      "macdLine": -1.01,
-      "signalLine": 47.16,
-      "histogram": -48.17,
-      "ema20": 4234.93,
-      "sma50": 4088.35
+      "rsi": 41.84,
+      "macdLine": -7.49,
+      "signalLine": 36.47,
+      "histogram": -43.96,
+      "ema20": 4225.76,
+      "sma50": 4098.62
     },
     "history": [
       {
@@ -23620,14 +23660,24 @@
         "sma50": 4075.59
       },
       {
+        "date": "2026-09-09",
+        "open": 4102,
+        "high": 4217.5,
+        "low": 4071.3,
+        "close": 4151.1,
+        "volume": 1044264,
+        "ema20": 4236.73,
+        "sma50": 4088.73
+      },
+      {
         "date": "2026-09-10",
         "open": 4151.1,
         "high": 4184.8,
         "low": 4098.7,
-        "close": 4132.2,
-        "volume": 380639,
-        "ema20": 4234.93,
-        "sma50": 4088.35
+        "close": 4121.5,
+        "volume": 550970,
+        "ema20": 4225.76,
+        "sma50": 4098.62
       }
     ]
   },
@@ -23636,25 +23686,25 @@
     "name": "Tata Steel Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty Metal",
-    "price": 185.54,
-    "change": -3.21,
-    "changePercent": -1.7,
-    "volume": 16647828,
+    "price": 186.78,
+    "change": -1.97,
+    "changePercent": -1.04,
+    "volume": 23326670,
     "high24h": 189,
-    "low24h": 185.1,
+    "low24h": 185,
     "signal": "HOLD",
     "signalStrength": 50,
     "signalReason": "No strong momentum or breakout indicators detected. Price consolidation.",
-    "entryPrice": 185.54,
-    "targetPrice": 200.38,
-    "stopLoss": 178.12,
+    "entryPrice": 186.78,
+    "targetPrice": 201.72,
+    "stopLoss": 179.31,
     "indicators": {
-      "rsi": 48.38,
-      "macdLine": -0.32,
-      "signalLine": -0.56,
-      "histogram": 0.24,
-      "ema20": 186.03,
-      "sma50": 186.77
+      "rsi": 50.72,
+      "macdLine": -0.22,
+      "signalLine": -0.54,
+      "histogram": 0.32,
+      "ema20": 186.15,
+      "sma50": 186.79
     },
     "history": [
       {
@@ -24321,11 +24371,11 @@
         "date": "2026-09-10",
         "open": 189,
         "high": 189,
-        "low": 185.1,
-        "close": 185.54,
-        "volume": 16647828,
-        "ema20": 186.03,
-        "sma50": 186.77
+        "low": 185,
+        "close": 186.78,
+        "volume": 23326670,
+        "ema20": 186.15,
+        "sma50": 186.79
       }
     ]
   },
@@ -24334,25 +24384,25 @@
     "name": "Hindalco Industries Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty Metal",
-    "price": 1010.7,
-    "change": -16.2,
-    "changePercent": -1.58,
-    "volume": 1424493,
+    "price": 1014,
+    "change": -12.9,
+    "changePercent": -1.26,
+    "volume": 2172526,
     "high24h": 1029.5,
-    "low24h": 1009.7,
+    "low24h": 1007.8,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 1010.7,
-    "targetPrice": 909.63,
-    "stopLoss": 1061.24,
+    "entryPrice": 1014,
+    "targetPrice": 912.6,
+    "stopLoss": 1064.7,
     "indicators": {
-      "rsi": 46.74,
-      "macdLine": 0.38,
-      "signalLine": 4.91,
-      "histogram": -4.53,
-      "ema20": 1021.39,
-      "sma50": 1000.32
+      "rsi": 47.73,
+      "macdLine": 0.64,
+      "signalLine": 4.97,
+      "histogram": -4.32,
+      "ema20": 1021.7,
+      "sma50": 1000.39
     },
     "history": [
       {
@@ -25009,11 +25059,11 @@
         "date": "2026-09-10",
         "open": 1027.5,
         "high": 1029.5,
-        "low": 1009.7,
-        "close": 1010.7,
-        "volume": 1424493,
-        "ema20": 1021.39,
-        "sma50": 1000.32
+        "low": 1007.8,
+        "close": 1014,
+        "volume": 2172526,
+        "ema20": 1021.7,
+        "sma50": 1000.39
       }
     ]
   },
@@ -25022,25 +25072,25 @@
     "name": "Vedanta Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty Metal",
-    "price": 270.8,
-    "change": -1.7,
-    "changePercent": -0.62,
-    "volume": 3006905,
+    "price": 269.05,
+    "change": -3.45,
+    "changePercent": -1.27,
+    "volume": 4829415,
     "high24h": 275.1,
-    "low24h": 270,
+    "low24h": 268.8,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 270.8,
-    "targetPrice": 243.72,
-    "stopLoss": 284.34,
+    "entryPrice": 269.05,
+    "targetPrice": 242.15,
+    "stopLoss": 282.5,
     "indicators": {
-      "rsi": 47.5,
-      "macdLine": -0.36,
-      "signalLine": 0.33,
-      "histogram": -0.69,
-      "ema20": 273.14,
-      "sma50": 270.81
+      "rsi": 46.04,
+      "macdLine": -0.5,
+      "signalLine": 0.3,
+      "histogram": -0.8,
+      "ema20": 272.97,
+      "sma50": 270.78
     },
     "history": [
       {
@@ -25707,11 +25757,11 @@
         "date": "2026-09-10",
         "open": 273.75,
         "high": 275.1,
-        "low": 270,
-        "close": 270.8,
-        "volume": 3006905,
-        "ema20": 273.14,
-        "sma50": 270.81
+        "low": 268.8,
+        "close": 269.05,
+        "volume": 4829415,
+        "ema20": 272.97,
+        "sma50": 270.78
       }
     ]
   },
@@ -25720,25 +25770,25 @@
     "name": "Steel Authority of India Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty Metal",
-    "price": 184.3,
-    "change": -2.1,
-    "changePercent": -1.13,
-    "volume": 5548496,
+    "price": 183.75,
+    "change": -2.65,
+    "changePercent": -1.42,
+    "volume": 8056438,
     "high24h": 187.03,
-    "low24h": 183.72,
+    "low24h": 183.1,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 184.3,
-    "targetPrice": 165.87,
-    "stopLoss": 193.52,
+    "entryPrice": 183.75,
+    "targetPrice": 165.38,
+    "stopLoss": 192.94,
     "indicators": {
-      "rsi": 50.53,
-      "macdLine": 4.21,
-      "signalLine": 5.32,
-      "histogram": -1.11,
-      "ema20": 185.87,
-      "sma50": 174.78
+      "rsi": 49.89,
+      "macdLine": 4.17,
+      "signalLine": 5.31,
+      "histogram": -1.14,
+      "ema20": 185.82,
+      "sma50": 174.77
     },
     "history": [
       {
@@ -26405,11 +26455,11 @@
         "date": "2026-09-10",
         "open": 186.51,
         "high": 187.03,
-        "low": 183.72,
-        "close": 184.3,
-        "volume": 5548496,
-        "ema20": 185.87,
-        "sma50": 174.78
+        "low": 183.1,
+        "close": 183.75,
+        "volume": 8056438,
+        "ema20": 185.82,
+        "sma50": 174.77
       }
     ]
   },
@@ -26418,25 +26468,25 @@
     "name": "National Aluminium Co Ltd.",
     "sector": "Metals & Mining",
     "indexGroup": "Nifty Metal",
-    "price": 372.3,
-    "change": -5.3,
-    "changePercent": -1.4,
-    "volume": 2402511,
+    "price": 373.35,
+    "change": -4.25,
+    "changePercent": -1.13,
+    "volume": 3373927,
     "high24h": 383,
-    "low24h": 371.45,
+    "low24h": 371.05,
     "signal": "SELL",
     "signalStrength": 72,
     "signalReason": "Reduce / SELL: Bearish MACD signal line crossover and price breakdown below 20-day EMA.",
-    "entryPrice": 372.3,
-    "targetPrice": 335.07,
-    "stopLoss": 390.92,
+    "entryPrice": 373.35,
+    "targetPrice": 336.02,
+    "stopLoss": 392.02,
     "indicators": {
-      "rsi": 46.83,
-      "macdLine": -0.65,
-      "signalLine": 2.17,
-      "histogram": -2.82,
-      "ema20": 378.21,
-      "sma50": 368.94
+      "rsi": 47.37,
+      "macdLine": -0.57,
+      "signalLine": 2.19,
+      "histogram": -2.75,
+      "ema20": 378.31,
+      "sma50": 368.96
     },
     "history": [
       {
@@ -27103,11 +27153,11 @@
         "date": "2026-09-10",
         "open": 382,
         "high": 383,
-        "low": 371.45,
-        "close": 372.3,
-        "volume": 2402511,
-        "ema20": 378.21,
-        "sma50": 368.94
+        "low": 371.05,
+        "close": 373.35,
+        "volume": 3373927,
+        "ema20": 378.31,
+        "sma50": 368.96
       }
     ]
   }
