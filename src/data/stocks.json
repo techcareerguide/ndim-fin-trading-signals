@@ -7,7 +7,7 @@
     "price": 1202,
     "change": -9.2,
     "changePercent": -0.76,
-    "volume": 15568009,
+    "volume": 15572554,
     "high24h": 1228.2,
     "low24h": 1201,
     "signal": "HOLD",
@@ -661,7 +661,7 @@
         "high": 1228.2,
         "low": 1201,
         "close": 1202,
-        "volume": 15568009,
+        "volume": 15572554,
         "ema20": 1205.47,
         "sma50": 1258.05
       }
@@ -675,7 +675,7 @@
     "price": 2460.9,
     "change": -4.1,
     "changePercent": -0.17,
-    "volume": 8674856,
+    "volume": 8676373,
     "high24h": 2497,
     "low24h": 2432.1,
     "signal": "SELL",
@@ -1329,7 +1329,7 @@
         "high": 2497,
         "low": 2432.1,
         "close": 2460.9,
-        "volume": 8674856,
+        "volume": 8676373,
         "ema20": 2228.97,
         "sma50": 2243.38
       }
@@ -1343,7 +1343,7 @@
     "price": 1130.7,
     "change": -30.5,
     "changePercent": -2.63,
-    "volume": 13255049,
+    "volume": 13258477,
     "high24h": 1156.95,
     "low24h": 1125.1,
     "signal": "HOLD",
@@ -1997,7 +1997,7 @@
         "high": 1156.95,
         "low": 1125.1,
         "close": 1130.7,
-        "volume": 13255049,
+        "volume": 13258477,
         "ema20": 1063.34,
         "sma50": 1086.58
       }
@@ -2011,7 +2011,7 @@
     "price": 712,
     "change": -16.85,
     "changePercent": -2.31,
-    "volume": 33521732,
+    "volume": 33524133,
     "high24h": 733.4,
     "low24h": 707.15,
     "signal": "HOLD",
@@ -2665,7 +2665,7 @@
         "high": 733.4,
         "low": 707.15,
         "close": 712,
-        "volume": 33521732,
+        "volume": 33524133,
         "ema20": 715.6,
         "sma50": 718.07
       }
@@ -2679,7 +2679,7 @@
     "price": 1381,
     "change": -16,
     "changePercent": -1.15,
-    "volume": 25149120,
+    "volume": 25149396,
     "high24h": 1411.8,
     "low24h": 1377.9,
     "signal": "HOLD",
@@ -3333,7 +3333,7 @@
         "high": 1411.8,
         "low": 1377.9,
         "close": 1381,
-        "volume": 25149120,
+        "volume": 25149396,
         "ema20": 1358.95,
         "sma50": 1382.69
       }
@@ -3347,7 +3347,7 @@
     "price": 973.7,
     "change": 11.1,
     "changePercent": 1.15,
-    "volume": 15079976,
+    "volume": 15083265,
     "high24h": 983.8,
     "low24h": 960.7,
     "signal": "HOLD",
@@ -4001,7 +4001,7 @@
         "high": 983.8,
         "low": 960.7,
         "close": 973.7,
-        "volume": 15079976,
+        "volume": 15083265,
         "ema20": 968.17,
         "sma50": 1007.46
       }
@@ -4015,7 +4015,7 @@
     "price": 1875.2,
     "change": -29.8,
     "changePercent": -1.56,
-    "volume": 8585764,
+    "volume": 8586339,
     "high24h": 1929.6,
     "low24h": 1863.9,
     "signal": "HOLD",
@@ -4669,7 +4669,7 @@
         "high": 1929.6,
         "low": 1863.9,
         "close": 1875.2,
-        "volume": 8585764,
+        "volume": 8586339,
         "ema20": 1826.25,
         "sma50": 1858.82
       }
@@ -4683,7 +4683,7 @@
     "price": 3661.9,
     "change": 34.8,
     "changePercent": 0.96,
-    "volume": 2331099,
+    "volume": 2331147,
     "high24h": 3687.7,
     "low24h": 3632,
     "signal": "SELL",
@@ -5337,7 +5337,7 @@
         "high": 3687.7,
         "low": 3632,
         "close": 3661.9,
-        "volume": 2331099,
+        "volume": 2331147,
         "ema20": 3729.36,
         "sma50": 3898.11
       }
@@ -5351,7 +5351,7 @@
     "price": 260.8,
     "change": -2.7,
     "changePercent": -1.02,
-    "volume": 11522059,
+    "volume": 11528925,
     "high24h": 263.9,
     "low24h": 259.95,
     "signal": "HOLD",
@@ -6005,7 +6005,7 @@
         "high": 263.9,
         "low": 259.95,
         "close": 260.8,
-        "volume": 11522059,
+        "volume": 11528925,
         "ema20": 263.25,
         "sma50": 266.62
       }
@@ -6019,7 +6019,7 @@
     "price": 1853.2,
     "change": -40.6,
     "changePercent": -2.14,
-    "volume": 1225670,
+    "volume": 1226363,
     "high24h": 1889,
     "low24h": 1848.1,
     "signal": "HOLD",
@@ -6673,7 +6673,7 @@
         "high": 1889,
         "low": 1848.1,
         "close": 1853.2,
-        "volume": 1225670,
+        "volume": 1226363,
         "ema20": 1889.86,
         "sma50": 1956.95
       }
@@ -6687,7 +6687,7 @@
     "price": 250.35,
     "change": -0.1,
     "changePercent": -0.04,
-    "volume": 8908610,
+    "volume": 8908653,
     "high24h": 253.35,
     "low24h": 249.15,
     "signal": "SELL",
@@ -7341,7 +7341,7 @@
         "high": 253.35,
         "low": 249.15,
         "close": 250.35,
-        "volume": 8908610,
+        "volume": 8908653,
         "ema20": 255.25,
         "sma50": 262.94
       }
@@ -7355,7 +7355,7 @@
     "price": 309,
     "change": -6.15,
     "changePercent": -1.95,
-    "volume": 7888305,
+    "volume": 7888611,
     "high24h": 316.4,
     "low24h": 308.1,
     "signal": "SELL",
@@ -8009,7 +8009,7 @@
         "high": 316.4,
         "low": 308.1,
         "close": 309,
-        "volume": 7888305,
+        "volume": 7888611,
         "ema20": 317.86,
         "sma50": 328.06
       }
@@ -8023,7 +8023,7 @@
     "price": 225,
     "change": 3,
     "changePercent": 1.35,
-    "volume": 5257311,
+    "volume": 5262091,
     "high24h": 226.25,
     "low24h": 223,
     "signal": "HOLD",
@@ -8677,7 +8677,7 @@
         "high": 226.25,
         "low": 223,
         "close": 225,
-        "volume": 5257311,
+        "volume": 5262091,
         "ema20": 226.32,
         "sma50": 232.46
       }
@@ -8691,7 +8691,7 @@
     "price": 1241.3,
     "change": 25,
     "changePercent": 2.06,
-    "volume": 3320032,
+    "volume": 3320243,
     "high24h": 1247.2,
     "low24h": 1211.3,
     "signal": "HOLD",
@@ -9345,7 +9345,7 @@
         "high": 1247.2,
         "low": 1211.3,
         "close": 1241.3,
-        "volume": 3320032,
+        "volume": 3320243,
         "ema20": 1226.9,
         "sma50": 1269.77
       }
@@ -9359,7 +9359,7 @@
     "price": 4424.2,
     "change": -20.6,
     "changePercent": -0.46,
-    "volume": 651489,
+    "volume": 651506,
     "high24h": 4494.4,
     "low24h": 4402.7,
     "signal": "SELL",
@@ -10013,7 +10013,7 @@
         "high": 4494.4,
         "low": 4402.7,
         "close": 4424.2,
-        "volume": 651489,
+        "volume": 651506,
         "ema20": 4573.7,
         "sma50": 4859.08
       }
@@ -10027,7 +10027,7 @@
     "price": 442.3,
     "change": -5.1,
     "changePercent": -1.14,
-    "volume": 15003825,
+    "volume": 15004260,
     "high24h": 447.15,
     "low24h": 438.6,
     "signal": "BUY",
@@ -10681,7 +10681,7 @@
         "high": 447.15,
         "low": 438.6,
         "close": 442.3,
-        "volume": 15003825,
+        "volume": 15004260,
         "ema20": 430.69,
         "sma50": 415.25
       }
@@ -10695,7 +10695,7 @@
     "price": 1236,
     "change": -54,
     "changePercent": -4.19,
-    "volume": 12761304,
+    "volume": 12762071,
     "high24h": 1264.9,
     "low24h": 1225.3,
     "signal": "HOLD",
@@ -11349,7 +11349,7 @@
         "high": 1264.9,
         "low": 1225.3,
         "close": 1236,
-        "volume": 12761304,
+        "volume": 12762071,
         "ema20": 1250.4,
         "sma50": 1244.29
       }
@@ -11363,7 +11363,7 @@
     "price": 863.2,
     "change": -13.8,
     "changePercent": -1.57,
-    "volume": 1283729,
+    "volume": 1283832,
     "high24h": 882.6,
     "low24h": 859.7,
     "signal": "HOLD",
@@ -12017,7 +12017,7 @@
         "high": 882.6,
         "low": 859.7,
         "close": 863.2,
-        "volume": 1283729,
+        "volume": 1283832,
         "ema20": 896.21,
         "sma50": 958.07
       }
@@ -12031,7 +12031,7 @@
     "price": 121.9,
     "change": 5.6,
     "changePercent": 4.82,
-    "volume": 78107320,
+    "volume": 78115490,
     "high24h": 125.22,
     "low24h": 120,
     "signal": "BUY",
@@ -12685,7 +12685,7 @@
         "high": 125.22,
         "low": 120,
         "close": 121.9,
-        "volume": 78107320,
+        "volume": 78115490,
         "ema20": 116.05,
         "sma50": 115.95
       }
@@ -12699,7 +12699,7 @@
     "price": 238.2,
     "change": 7.8,
     "changePercent": 3.39,
-    "volume": 13629493,
+    "volume": 13633759,
     "high24h": 238.7,
     "low24h": 229.75,
     "signal": "HOLD",
@@ -13353,7 +13353,7 @@
         "high": 238.7,
         "low": 229.75,
         "close": 238.2,
-        "volume": 13629493,
+        "volume": 13633759,
         "ema20": 233.8,
         "sma50": 238.05
       }
@@ -13367,7 +13367,7 @@
     "price": 348.85,
     "change": 10.85,
     "changePercent": 3.21,
-    "volume": 31068999,
+    "volume": 31072948,
     "high24h": 355.5,
     "low24h": 321.35,
     "signal": "HOLD",
@@ -14021,7 +14021,7 @@
         "high": 355.5,
         "low": 321.35,
         "close": 348.85,
-        "volume": 31068999,
+        "volume": 31072948,
         "ema20": 332.27,
         "sma50": 340.57
       }
@@ -14035,7 +14035,7 @@
     "price": 76.33,
     "change": -1.75,
     "changePercent": -2.24,
-    "volume": 11812421,
+    "volume": 11815153,
     "high24h": 78.59,
     "low24h": 76.24,
     "signal": "SELL",
@@ -14689,7 +14689,7 @@
         "high": 78.59,
         "low": 76.24,
         "close": 76.33,
-        "volume": 11812421,
+        "volume": 11815153,
         "ema20": 80.51,
         "sma50": 83.73
       }
@@ -14703,7 +14703,7 @@
     "price": 182.14,
     "change": -2.26,
     "changePercent": -1.23,
-    "volume": 15769608,
+    "volume": 15779196,
     "high24h": 185.85,
     "low24h": 181.48,
     "signal": "HOLD",
@@ -15357,7 +15357,7 @@
         "high": 185.85,
         "low": 181.48,
         "close": 182.14,
-        "volume": 15769608,
+        "volume": 15779196,
         "ema20": 168.97,
         "sma50": 172.46
       }
@@ -15371,7 +15371,7 @@
     "price": 1379.9,
     "change": -0.1,
     "changePercent": -0.01,
-    "volume": 3992586,
+    "volume": 3994293,
     "high24h": 1399.5,
     "low24h": 1359,
     "signal": "HOLD",
@@ -16025,7 +16025,7 @@
         "high": 1399.5,
         "low": 1359,
         "close": 1379.9,
-        "volume": 3992586,
+        "volume": 3994293,
         "ema20": 1282.28,
         "sma50": 1286.81
       }
@@ -16039,7 +16039,7 @@
     "price": 1779.1,
     "change": -10.9,
     "changePercent": -0.61,
-    "volume": 3946128,
+    "volume": 3946622,
     "high24h": 1796,
     "low24h": 1752.7,
     "signal": "BUY",
@@ -16693,7 +16693,7 @@
         "high": 1796,
         "low": 1752.7,
         "close": 1779.1,
-        "volume": 3946128,
+        "volume": 3946622,
         "ema20": 1588.64,
         "sma50": 1579.91
       }
@@ -16707,7 +16707,7 @@
     "price": 3611.3,
     "change": -103.3,
     "changePercent": -2.78,
-    "volume": 104713,
+    "volume": 104714,
     "high24h": 3735.6,
     "low24h": 3580,
     "signal": "HOLD",
@@ -17361,7 +17361,7 @@
         "high": 3735.6,
         "low": 3580,
         "close": 3611.3,
-        "volume": 104713,
+        "volume": 104714,
         "ema20": 3413.64,
         "sma50": 3430.8
       }
@@ -17375,7 +17375,7 @@
     "price": 1925,
     "change": -26.9,
     "changePercent": -1.38,
-    "volume": 1309589,
+    "volume": 1309638,
     "high24h": 1964.7,
     "low24h": 1916.4,
     "signal": "BUY",
@@ -18029,7 +18029,7 @@
         "high": 1964.7,
         "low": 1916.4,
         "close": 1925,
-        "volume": 1309589,
+        "volume": 1309638,
         "ema20": 1867.57,
         "sma50": 1856.12
       }
@@ -18043,7 +18043,7 @@
     "price": 5690,
     "change": -51,
     "changePercent": -0.89,
-    "volume": 1277079,
+    "volume": 1277186,
     "high24h": 5909,
     "low24h": 5635,
     "signal": "BUY",
@@ -18697,7 +18697,7 @@
         "high": 5909,
         "low": 5635,
         "close": 5690,
-        "volume": 1277079,
+        "volume": 1277186,
         "ema20": 5622.47,
         "sma50": 5554.21
       }
@@ -18711,7 +18711,7 @@
     "price": 11475,
     "change": -14,
     "changePercent": -0.12,
-    "volume": 453824,
+    "volume": 453832,
     "high24h": 11702,
     "low24h": 11440,
     "signal": "HOLD",
@@ -19365,7 +19365,7 @@
         "high": 11702,
         "low": 11440,
         "close": 11475,
-        "volume": 453824,
+        "volume": 453832,
         "ema20": 11689.68,
         "sma50": 12597.98
       }
@@ -19379,7 +19379,7 @@
     "price": 2907,
     "change": -13.9,
     "changePercent": -0.48,
-    "volume": 2142358,
+    "volume": 2142503,
     "high24h": 2938.6,
     "low24h": 2885.6,
     "signal": "HOLD",
@@ -20033,7 +20033,7 @@
         "high": 2938.6,
         "low": 2885.6,
         "close": 2907,
-        "volume": 2142358,
+        "volume": 2142503,
         "ema20": 2917.7,
         "sma50": 3136.56
       }
@@ -20047,7 +20047,7 @@
     "price": 10287,
     "change": -118,
     "changePercent": -1.13,
-    "volume": 110830,
+    "volume": 110832,
     "high24h": 10499,
     "low24h": 10287,
     "signal": "HOLD",
@@ -20701,7 +20701,7 @@
         "high": 10499,
         "low": 10287,
         "close": 10287,
-        "volume": 110830,
+        "volume": 110832,
         "ema20": 10517.08,
         "sma50": 11267.96
       }
@@ -20715,7 +20715,7 @@
     "price": 5230,
     "change": 5,
     "changePercent": 0.1,
-    "volume": 366027,
+    "volume": 366042,
     "high24h": 5299,
     "low24h": 5183,
     "signal": "HOLD",
@@ -21369,7 +21369,7 @@
         "high": 5299,
         "low": 5183,
         "close": 5230,
-        "volume": 366027,
+        "volume": 366042,
         "ema20": 5156.91,
         "sma50": 5387.04
       }
@@ -21383,7 +21383,7 @@
     "price": 7349,
     "change": 64.5,
     "changePercent": 0.89,
-    "volume": 490127,
+    "volume": 490129,
     "high24h": 7438.5,
     "low24h": 7308,
     "signal": "HOLD",
@@ -22037,7 +22037,7 @@
         "high": 7438.5,
         "low": 7308,
         "close": 7349,
-        "volume": 490127,
+        "volume": 490129,
         "ema20": 7234.29,
         "sma50": 7591.19
       }
@@ -22719,7 +22719,7 @@
     "price": 174.04,
     "change": -1.46,
     "changePercent": -0.83,
-    "volume": 12635985,
+    "volume": 12638617,
     "high24h": 176.4,
     "low24h": 173.87,
     "signal": "SELL",
@@ -23373,7 +23373,7 @@
         "high": 176.4,
         "low": 173.87,
         "close": 174.04,
-        "volume": 12635985,
+        "volume": 12638617,
         "ema20": 178.4,
         "sma50": 183.36
       }
@@ -23387,7 +23387,7 @@
     "price": 900.45,
     "change": -7.55,
     "changePercent": -0.83,
-    "volume": 2006602,
+    "volume": 2007016,
     "high24h": 916.7,
     "low24h": 899.65,
     "signal": "SELL",
@@ -24041,7 +24041,7 @@
         "high": 916.7,
         "low": 899.65,
         "close": 900.45,
-        "volume": 2006602,
+        "volume": 2007016,
         "ema20": 927.57,
         "sma50": 987.86
       }
@@ -24055,7 +24055,7 @@
     "price": 243.2,
     "change": -2.9,
     "changePercent": -1.18,
-    "volume": 5401157,
+    "volume": 5411850,
     "high24h": 249.1,
     "low24h": 242.5,
     "signal": "SELL",
@@ -24709,7 +24709,7 @@
         "high": 249.1,
         "low": 242.5,
         "close": 243.2,
-        "volume": 5401157,
+        "volume": 5411850,
         "ema20": 256.72,
         "sma50": 266.31
       }
@@ -24723,7 +24723,7 @@
     "price": 168.97,
     "change": -1.98,
     "changePercent": -1.16,
-    "volume": 4229263,
+    "volume": 4231992,
     "high24h": 171.7,
     "low24h": 168.3,
     "signal": "SELL",
@@ -25377,7 +25377,7 @@
         "high": 171.7,
         "low": 168.3,
         "close": 168.97,
-        "volume": 4229263,
+        "volume": 4231992,
         "ema20": 174.6,
         "sma50": 179.41
       }
@@ -25391,7 +25391,7 @@
     "price": 318,
     "change": -6.25,
     "changePercent": -1.93,
-    "volume": 2825431,
+    "volume": 2826003,
     "high24h": 324.25,
     "low24h": 316.9,
     "signal": "SELL",
@@ -26045,7 +26045,7 @@
         "high": 324.25,
         "low": 316.9,
         "close": 318,
-        "volume": 2825431,
+        "volume": 2826003,
         "ema20": 333.01,
         "sma50": 362.16
       }
